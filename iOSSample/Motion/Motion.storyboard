@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                                 <state key="normal" title="이전"/>
                                                 <connections>
-                                                    <action selector="btnBack:" destination="Xcw-Zr-rhJ" eventType="touchUpInside" id="sRx-XW-u33"/>
+                                                    <action selector="btnBackAction:" destination="Xcw-Zr-rhJ" eventType="touchUpInside" id="sRx-XW-u33"/>
                                                 </connections>
                                             </button>
                                         </subviews>

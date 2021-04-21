@@ -10,7 +10,7 @@ import UIKit
 class MotionViewController: UIViewController {
 
     @IBOutlet var lblMotion: UILabel!
-    @IBAction func btnBack(_ sender: UIButton) {
+    @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
     
@@ -36,6 +36,7 @@ class MotionViewController: UIViewController {
         //1초 딜레이 후 실행
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.lblMotion.text = "스마트폰을 흔들어 보세요!"
+            NSLog("흔들기 끝")
         }
     }
 }

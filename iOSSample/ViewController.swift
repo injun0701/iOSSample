@@ -11,13 +11,13 @@ class ViewController: UIViewController {
     
     @IBOutlet var lblTimer: UILabel!
     
-    @IBAction func btnToUIObject(_ sender: UIButton) {
+    @IBAction func btnToUIObjectSampleAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "UIObject", bundle: nil)
         let navi = sb.instantiateViewController(withIdentifier: "UIObjectViewController") as! UIObjectViewController
         navigationController?.pushViewController(navi, animated: true)
     }
     
-    @IBAction func btnToMotionSample(_ sender: UIButton) {
+    @IBAction func btnToMotionSampleAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Motion", bundle: nil)
         let navi = sb.instantiateViewController(withIdentifier: "MotionViewController") as! MotionViewController
         navigationController?.pushViewController(navi, animated: true)

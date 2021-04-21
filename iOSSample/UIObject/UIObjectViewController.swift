@@ -9,21 +9,25 @@ import UIKit
 
 class UIObjectViewController: UIViewController {
     
-    @IBAction func btnToLbl(_ sender: UIButton) {
+    @IBAction func btnToLblAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "UIObject", bundle: nil)
         let navi = sb.instantiateViewController(withIdentifier: "LblViewController") as! LblViewController
         navigationController?.pushViewController(navi, animated: true)
     }
     
-    @IBAction func btnToBtn
-    (_ sender: UIButton) {
+    @IBAction func btnToBtnAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "UIObject", bundle: nil)
         let navi = sb.instantiateViewController(withIdentifier: "BtnViewController") as! BtnViewController
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToImgAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "UIObject", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "ImgViewViewController") as! ImgViewViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
     
-    @IBAction func btnBack(_ sender: UIButton) {
+    @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
     

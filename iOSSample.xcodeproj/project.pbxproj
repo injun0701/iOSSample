@@ -20,6 +20,7 @@
 		8442A1A7262FD56C0077C18A /* LblViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A1A6262FD56C0077C18A /* LblViewController.swift */; };
 		8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A1AF262FD7880077C18A /* UIObjectViewController.swift */; };
 		8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A1B6262FDCB80077C18A /* BtnViewController.swift */; };
+		8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A1C0263018E30077C18A /* ImgViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8442A1A6262FD56C0077C18A /* LblViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LblViewController.swift; sourceTree = "<group>"; };
 		8442A1AF262FD7880077C18A /* UIObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIObjectViewController.swift; sourceTree = "<group>"; };
 		8442A1B6262FDCB80077C18A /* BtnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnViewController.swift; sourceTree = "<group>"; };
+		8442A1C0263018E30077C18A /* ImgViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				8442A1A0262FCDD80077C18A /* UIObject.storyboard */,
-				8442A1A6262FD56C0077C18A /* LblViewController.swift */,
 				8442A1AF262FD7880077C18A /* UIObjectViewController.swift */,
+				8442A1A6262FD56C0077C18A /* LblViewController.swift */,
 				8442A1B6262FDCB80077C18A /* BtnViewController.swift */,
+				8442A1C0263018E30077C18A /* ImgViewViewController.swift */,
 			);
 			path = UIObject;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				8442A1A7262FD56C0077C18A /* LblViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
 				8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */,
+				8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

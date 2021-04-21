@@ -16,7 +16,7 @@ class LblViewController: UIViewController {
     @IBOutlet var lblTalking: UILabel!
     @IBOutlet var lblRotation: UILabel!
     
-    @IBAction func btnBack(_ sender: UIButton) {
+    @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
     

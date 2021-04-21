@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="190.5" height="45"/>
                                                 <state key="normal" title="UI Object"/>
                                                 <connections>
-                                                    <action selector="btnToUIObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-7j-YyZ"/>
+                                                    <action selector="btnToUIObjectSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-7j-YyZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -45,9 +45,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOB-3r-ijw">
                                                 <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
-                                                <state key="normal" title="Motion Sample"/>
+                                                <state key="normal" title="Motion"/>
                                                 <connections>
-                                                    <action selector="btnToMotionSample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AE6-cI-Qsr"/>
+                                                    <action selector="btnToMotionSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AE6-cI-Qsr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
