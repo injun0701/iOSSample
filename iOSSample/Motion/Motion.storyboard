@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xcw-Zr-rhJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Motion View Controller-->
+        <scene sceneID="nzs-zC-gIP">
+            <objects>
+                <viewController storyboardIdentifier="MotionViewController" id="Xcw-Zr-rhJ" customClass="MotionViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Da0-Ox-ppP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YY0-OT-wyL">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLz-nd-sw9" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-5e-3Zd">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="Xcw-Zr-rhJ" eventType="touchUpInside" id="sRx-XW-u33"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ftc-5e-3Zd" firstAttribute="top" secondItem="uLz-nd-sw9" secondAttribute="top" id="3sQ-X4-Qgx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ftc-5e-3Zd" secondAttribute="trailing" id="LKc-oZ-vGz"/>
+                                            <constraint firstItem="ftc-5e-3Zd" firstAttribute="leading" secondItem="uLz-nd-sw9" secondAttribute="leading" id="QcZ-gT-H7e"/>
+                                            <constraint firstAttribute="height" constant="45" id="o3f-8R-WNT"/>
+                                            <constraint firstAttribute="bottom" secondItem="ftc-5e-3Zd" secondAttribute="bottom" id="okf-KB-agq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스마트폰을 흔들어 보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-K5-I6p">
+                                <rect key="frame" x="84" y="438.5" width="246.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5gC-57-zA0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YY0-OT-wyL" secondAttribute="trailing" constant="20" id="6ia-A9-67w"/>
+                            <constraint firstItem="xN9-K5-I6p" firstAttribute="centerY" secondItem="5gC-57-zA0" secondAttribute="centerY" id="I0m-ul-rlP"/>
+                            <constraint firstItem="xN9-K5-I6p" firstAttribute="centerX" secondItem="5gC-57-zA0" secondAttribute="centerX" id="NG5-ID-jBc"/>
+                            <constraint firstItem="YY0-OT-wyL" firstAttribute="leading" secondItem="5gC-57-zA0" secondAttribute="leading" constant="20" id="YnX-Qn-yHC"/>
+                            <constraint firstItem="5gC-57-zA0" firstAttribute="bottom" secondItem="YY0-OT-wyL" secondAttribute="bottom" constant="10" id="b4J-qq-4AC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblMotion" destination="xN9-K5-I6p" id="HrZ-g9-oRf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6B-WQ-9jh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

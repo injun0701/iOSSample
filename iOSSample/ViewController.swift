@@ -8,10 +8,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var lblTimer: UILabel!
+    
+    @IBAction func btnToUIObject(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "UIObject", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "UIObjectViewController") as! UIObjectViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToMotionSample(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Motion", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "MotionViewController") as! MotionViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    var timer:Timer! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //바로 시작하는 타이머 생성
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+            let date = Date()
+            //날짜 및 시간을 문자열로 만들어 주는 클래스이 겍체 생성
+            let formatter = DateFormatter()
+            //문자열 서실 설정
+            formatter.dateFormat = "yyyy-MM-dd ccc hh:mm:ss"
+            let msg = formatter.string(from: date)
+            //클러저에서는 클래스에 만든 프로퍼티가 직접 사용이 안됨 - 객체를 통해서 접근
+            self.lblTimer.text = msg
+        })
     }
 
 
