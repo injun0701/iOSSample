@@ -51,14 +51,14 @@ class ImgViewViewController: UIViewController {
     }
     @IBAction func btnPrevAction(_ sender: UIButton) {
         i = i! - 1
-        if i! > 0 {
+        if i! < 0 {
             i = imgArray.count - 1
         }
         imgView.image = imgArray[i!]
     }
     @IBAction func btnNextAction(_ sender: UIButton) {
-        i = i! - 1
-        if i! < imgArray.count {
+        i = i! + 1
+        if i! == imgArray.count {
             i = 0
         }
         imgView.image = imgArray[i!]
