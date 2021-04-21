@@ -64,6 +64,10 @@ class ImgViewViewController: UIViewController {
         imgView.image = imgArray[i!]
     }
     
+    @IBAction func btnBackAction(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

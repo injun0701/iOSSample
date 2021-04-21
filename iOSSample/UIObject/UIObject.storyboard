@@ -310,7 +310,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                                 <state key="normal" title="이전"/>
                                                 <connections>
-                                                    <action selector="btnBackAction:" destination="jCL-wO-wBd" eventType="touchUpInside" id="oQj-ER-r9c"/>
+                                                    <action selector="btnBackAction:" destination="sEG-d3-70h" eventType="touchUpInside" id="f2V-5Z-XJi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
