@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842F134926310407008A172D /* Gesture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F134826310407008A172D /* Gesture.storyboard */; };
+		842F134C26310416008A172D /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F134B26310416008A172D /* GestureViewController.swift */; };
+		842F1350263112B7008A172D /* ScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F134F263112B7008A172D /* ScrollViewViewController.swift */; };
+		842F1353263112CB008A172D /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F1352263112CB008A172D /* ScrollView.storyboard */; };
+		842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F13562631217D008A172D /* ImgScrollViewViewController.swift */; };
+		842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F135926312197008A172D /* ImgSwipeViewController.swift */; };
+		842F135E26312D00008A172D /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F135D26312D00008A172D /* PickerViewViewController.swift */; };
 		8442A17D262FAF700077C18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A17C262FAF700077C18A /* AppDelegate.swift */; };
 		8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A17E262FAF700077C18A /* SceneDelegate.swift */; };
 		8442A181262FAF700077C18A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A180262FAF700077C18A /* ViewController.swift */; };
@@ -24,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842F134826310407008A172D /* Gesture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gesture.storyboard; sourceTree = "<group>"; };
+		842F134B26310416008A172D /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		842F134F263112B7008A172D /* ScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewViewController.swift; sourceTree = "<group>"; };
+		842F1352263112CB008A172D /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		842F13562631217D008A172D /* ImgScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgScrollViewViewController.swift; sourceTree = "<group>"; };
+		842F135926312197008A172D /* ImgSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgSwipeViewController.swift; sourceTree = "<group>"; };
+		842F135D26312D00008A172D /* PickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
 		8442A179262FAF700077C18A /* iOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8442A17C262FAF700077C18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8442A17E262FAF700077C18A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +67,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842F1347263103E9008A172D /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				842F134826310407008A172D /* Gesture.storyboard */,
+				842F134B26310416008A172D /* GestureViewController.swift */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		842F134E2631129B008A172D /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				842F1352263112CB008A172D /* ScrollView.storyboard */,
+				842F134F263112B7008A172D /* ScrollViewViewController.swift */,
+				842F13562631217D008A172D /* ImgScrollViewViewController.swift */,
+				842F135926312197008A172D /* ImgSwipeViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		8442A170262FAF700077C18A = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +106,8 @@
 		8442A17B262FAF700077C18A /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				842F134E2631129B008A172D /* ScrollView */,
+				842F1347263103E9008A172D /* Gesture */,
 				8442A19E262FCDB40077C18A /* UIObject */,
 				8442A191262FB3020077C18A /* Motion */,
 				8442A17C262FAF700077C18A /* AppDelegate.swift */,
@@ -111,6 +147,7 @@
 				8442A1A6262FD56C0077C18A /* LblViewController.swift */,
 				8442A1B6262FDCB80077C18A /* BtnViewController.swift */,
 				8442A1C0263018E30077C18A /* ImgViewViewController.swift */,
+				842F135D26312D00008A172D /* PickerViewViewController.swift */,
 			);
 			path = UIObject;
 			sourceTree = "<group>";
@@ -176,6 +213,8 @@
 				8442A1A1262FCDD80077C18A /* UIObject.storyboard in Resources */,
 				8442A186262FAF710077C18A /* Assets.xcassets in Resources */,
 				8442A193262FB4730077C18A /* Motion.storyboard in Resources */,
+				842F134926310407008A172D /* Gesture.storyboard in Resources */,
+				842F1353263112CB008A172D /* ScrollView.storyboard in Resources */,
 				8442A184262FAF700077C18A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,11 +230,16 @@
 				8442A17D262FAF700077C18A /* AppDelegate.swift in Sources */,
 				8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */,
 				8442A19A262FB6200077C18A /* SubViewBackgroundDesign.swift in Sources */,
+				842F1350263112B7008A172D /* ScrollViewViewController.swift in Sources */,
 				8442A196262FB48C0077C18A /* MotionViewController.swift in Sources */,
+				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
 				8442A1A7262FD56C0077C18A /* LblViewController.swift in Sources */,
+				842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
 				8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */,
+				842F134C26310416008A172D /* GestureViewController.swift in Sources */,
 				8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */,
+				842F135E26312D00008A172D /* PickerViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

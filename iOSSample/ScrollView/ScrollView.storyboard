@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Img Scroll View View Controller-->
+        <scene sceneID="VIY-mu-eEn">
+            <objects>
+                <viewController storyboardIdentifier="ImgScrollViewViewController" id="Sti-Ee-Utl" customClass="ImgScrollViewViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P5b-hS-s6l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6WB-5z-St0">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-cq-Hnn" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0n-MU-Mq1">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="Sti-Ee-Utl" eventType="touchUpInside" id="gwA-Fa-vhA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="o0n-MU-Mq1" firstAttribute="leading" secondItem="LzO-cq-Hnn" secondAttribute="leading" id="J4U-fm-EUs"/>
+                                            <constraint firstItem="o0n-MU-Mq1" firstAttribute="top" secondItem="LzO-cq-Hnn" secondAttribute="top" id="SHR-vz-K6E"/>
+                                            <constraint firstAttribute="trailing" secondItem="o0n-MU-Mq1" secondAttribute="trailing" id="fiO-TA-sY6"/>
+                                            <constraint firstAttribute="height" constant="45" id="gFg-Fo-s01"/>
+                                            <constraint firstAttribute="bottom" secondItem="o0n-MU-Mq1" secondAttribute="bottom" id="nDT-Pk-yXw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미지 스크롤 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-em-W1B">
+                                <rect key="frame" x="20" y="54" width="176.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SfR-f1-jyA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SfR-f1-jyA" firstAttribute="bottom" secondItem="6WB-5z-St0" secondAttribute="bottom" constant="10" id="3sg-02-xeQ"/>
+                            <constraint firstItem="Kxf-em-W1B" firstAttribute="leading" secondItem="SfR-f1-jyA" secondAttribute="leading" constant="20" id="Jsw-6M-mTa"/>
+                            <constraint firstItem="6WB-5z-St0" firstAttribute="leading" secondItem="P5b-hS-s6l" secondAttribute="leading" constant="20" id="ejp-RT-F8S"/>
+                            <constraint firstItem="Kxf-em-W1B" firstAttribute="top" secondItem="SfR-f1-jyA" secondAttribute="top" constant="10" id="hsT-eH-Y1Y"/>
+                            <constraint firstItem="SfR-f1-jyA" firstAttribute="trailing" secondItem="6WB-5z-St0" secondAttribute="trailing" constant="20" id="jye-aw-UMT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5x-Ic-qKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="121"/>
+        </scene>
+        <!--Img Swipe View Controller-->
+        <scene sceneID="jmG-Cc-AJZ">
+            <objects>
+                <viewController storyboardIdentifier="ImgSwipeViewController" id="uJE-o5-C5t" customClass="ImgSwipeViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eYG-kU-cwS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1GA-MT-2AN">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-Pr-Opi" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UD-2t-R60">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="uJE-o5-C5t" eventType="touchUpInside" id="pxz-3l-Oj8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3UD-2t-R60" firstAttribute="leading" secondItem="Vaa-Pr-Opi" secondAttribute="leading" id="HUX-0x-1dW"/>
+                                            <constraint firstAttribute="height" constant="45" id="PMl-9e-0a3"/>
+                                            <constraint firstItem="3UD-2t-R60" firstAttribute="top" secondItem="Vaa-Pr-Opi" secondAttribute="top" id="bf8-WU-SHB"/>
+                                            <constraint firstAttribute="trailing" secondItem="3UD-2t-R60" secondAttribute="trailing" id="qtA-JI-R59"/>
+                                            <constraint firstAttribute="bottom" secondItem="3UD-2t-R60" secondAttribute="bottom" id="sve-bf-r8r"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미지 스와이프 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-QD-bWb">
+                                <rect key="frame" x="20" y="54" width="197" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9qe-Lk-uPy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y4r-QD-bWb" firstAttribute="leading" secondItem="9qe-Lk-uPy" secondAttribute="leading" constant="20" id="9PD-88-9Rp"/>
+                            <constraint firstItem="9qe-Lk-uPy" firstAttribute="bottom" secondItem="1GA-MT-2AN" secondAttribute="bottom" constant="10" id="GAg-kL-Bsn"/>
+                            <constraint firstItem="1GA-MT-2AN" firstAttribute="leading" secondItem="eYG-kU-cwS" secondAttribute="leading" constant="20" id="HBo-We-lSU"/>
+                            <constraint firstItem="9qe-Lk-uPy" firstAttribute="trailing" secondItem="1GA-MT-2AN" secondAttribute="trailing" constant="20" id="Uf6-3a-MH5"/>
+                            <constraint firstItem="Y4r-QD-bWb" firstAttribute="top" secondItem="9qe-Lk-uPy" secondAttribute="top" constant="10" id="gxS-h4-UnI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bU-kd-gyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="121"/>
+        </scene>
+        <!--Scroll View View Controller-->
+        <scene sceneID="aP2-gW-xYw">
+            <objects>
+                <viewController storyboardIdentifier="ScrollViewViewController" id="DyH-3U-dNe" customClass="ScrollViewViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5aE-gU-v5z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="egf-EM-GgO">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po0-lk-ZXz" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKq-r7-d4i">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="DyH-3U-dNe" eventType="touchUpInside" id="dRL-s8-Uzg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wKq-r7-d4i" secondAttribute="trailing" id="CJI-MF-u9Z"/>
+                                            <constraint firstAttribute="height" constant="45" id="NE4-au-Y8j"/>
+                                            <constraint firstItem="wKq-r7-d4i" firstAttribute="leading" secondItem="Po0-lk-ZXz" secondAttribute="leading" id="Ug7-yH-TBc"/>
+                                            <constraint firstItem="wKq-r7-d4i" firstAttribute="top" secondItem="Po0-lk-ZXz" secondAttribute="top" id="XV5-oY-eUU"/>
+                                            <constraint firstAttribute="bottom" secondItem="wKq-r7-d4i" secondAttribute="bottom" id="fKS-8u-rG3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fZH-vl-U4B">
+                                <rect key="frame" x="20" y="178" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqK-e7-J4Z" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfN-e3-C0G">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이미지 스와이프"/>
+                                                <connections>
+                                                    <action selector="btnToImgSwipeAction:" destination="DyH-3U-dNe" eventType="touchUpInside" id="u6k-01-gQt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="sfN-e3-C0G" firstAttribute="leading" secondItem="xqK-e7-J4Z" secondAttribute="leading" id="5kg-b8-0TG"/>
+                                            <constraint firstAttribute="bottom" secondItem="sfN-e3-C0G" secondAttribute="bottom" id="7Gd-Dt-l7Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="sfN-e3-C0G" secondAttribute="trailing" id="C2v-ff-Jqx"/>
+                                            <constraint firstItem="sfN-e3-C0G" firstAttribute="top" secondItem="xqK-e7-J4Z" secondAttribute="top" id="Jzs-qt-3Ty"/>
+                                            <constraint firstAttribute="height" constant="45" id="suk-vu-tbp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ibr-pP-DtB">
+                                <rect key="frame" x="20" y="113" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-Jd-DF1" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wef-6o-AKf">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이미지 스크롤"/>
+                                                <connections>
+                                                    <action selector="btnToImgScrollAction:" destination="DyH-3U-dNe" eventType="touchUpInside" id="gP0-MK-jTw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="3Ev-3W-suk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wef-6o-AKf" secondAttribute="bottom" id="5JS-Nn-KRM"/>
+                                            <constraint firstItem="Wef-6o-AKf" firstAttribute="top" secondItem="3Yy-Jd-DF1" secondAttribute="top" id="9nU-VB-u59"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wef-6o-AKf" secondAttribute="trailing" id="jvo-fe-KvQ"/>
+                                            <constraint firstItem="Wef-6o-AKf" firstAttribute="leading" secondItem="3Yy-Jd-DF1" secondAttribute="leading" id="zSQ-No-7xB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스크롤뷰 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKZ-hq-f7F">
+                                <rect key="frame" x="20" y="54" width="130" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aZf-zk-NDY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aZf-zk-NDY" firstAttribute="trailing" secondItem="egf-EM-GgO" secondAttribute="trailing" constant="20" id="G2v-gL-ndn"/>
+                            <constraint firstItem="aZf-zk-NDY" firstAttribute="trailing" secondItem="ibr-pP-DtB" secondAttribute="trailing" constant="20" id="Lnd-Oj-5DM"/>
+                            <constraint firstItem="aZf-zk-NDY" firstAttribute="trailing" secondItem="fZH-vl-U4B" secondAttribute="trailing" constant="20" id="NTm-WH-dMB"/>
+                            <constraint firstItem="aZf-zk-NDY" firstAttribute="bottom" secondItem="egf-EM-GgO" secondAttribute="bottom" constant="10" id="Q56-0d-gxg"/>
+                            <constraint firstItem="kKZ-hq-f7F" firstAttribute="leading" secondItem="aZf-zk-NDY" secondAttribute="leading" constant="20" id="QCt-yB-sKf"/>
+                            <constraint firstItem="fZH-vl-U4B" firstAttribute="leading" secondItem="aZf-zk-NDY" secondAttribute="leading" constant="20" id="UHR-Ry-Fdm"/>
+                            <constraint firstItem="ibr-pP-DtB" firstAttribute="leading" secondItem="aZf-zk-NDY" secondAttribute="leading" constant="20" id="Y7k-dd-WU5"/>
+                            <constraint firstItem="kKZ-hq-f7F" firstAttribute="top" secondItem="aZf-zk-NDY" secondAttribute="top" constant="10" id="ahB-Mn-dlp"/>
+                            <constraint firstItem="ibr-pP-DtB" firstAttribute="top" secondItem="kKZ-hq-f7F" secondAttribute="bottom" constant="30" id="bbU-Ij-509"/>
+                            <constraint firstItem="egf-EM-GgO" firstAttribute="leading" secondItem="aZf-zk-NDY" secondAttribute="leading" constant="20" id="kR3-j8-SSw"/>
+                            <constraint firstItem="fZH-vl-U4B" firstAttribute="top" secondItem="ibr-pP-DtB" secondAttribute="bottom" constant="20" id="vaQ-m1-X6o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUU-Uk-rdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

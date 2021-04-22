@@ -23,6 +23,20 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToGestureSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Gesture", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "GestureViewController") as! GestureViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToScrollViewSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "ScrollView", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "ScrollViewViewController") as! ScrollViewViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    
+    
     var timer:Timer! = nil
     
     override func viewDidLoad() {

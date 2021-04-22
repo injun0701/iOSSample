@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gesture View Controller-->
+        <scene sceneID="N6W-AU-ote">
+            <objects>
+                <viewController storyboardIdentifier="GestureViewController" id="O2p-js-gdT" customClass="GestureViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PlU-6v-o9V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car0" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-vY-iBv">
+                                <rect key="frame" x="40" y="223.5" width="334" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="jM2-YC-XOv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미지를 터치해 보세요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTj-n0-chM">
+                                <rect key="frame" x="40" y="183" width="334" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제스쳐 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-Vk-pIM">
+                                <rect key="frame" x="20" y="54" width="109" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="psf-Cd-UrB">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnG-k1-flL" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdc-gJ-oFD">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="O2p-js-gdT" eventType="touchUpInside" id="Vs1-MM-pVk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wdc-gJ-oFD" firstAttribute="top" secondItem="MnG-k1-flL" secondAttribute="top" id="7uZ-uD-WGE"/>
+                                            <constraint firstAttribute="bottom" secondItem="wdc-gJ-oFD" secondAttribute="bottom" id="ZI4-ng-thU"/>
+                                            <constraint firstAttribute="trailing" secondItem="wdc-gJ-oFD" secondAttribute="trailing" id="ffS-3z-egs"/>
+                                            <constraint firstAttribute="height" constant="45" id="n96-Nv-bMq"/>
+                                            <constraint firstItem="wdc-gJ-oFD" firstAttribute="leading" secondItem="MnG-k1-flL" secondAttribute="leading" id="sSG-nu-RTk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JEJ-Z8-95B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8B2-Vk-pIM" firstAttribute="leading" secondItem="JEJ-Z8-95B" secondAttribute="leading" constant="20" id="E36-wb-ZX1"/>
+                            <constraint firstItem="iTj-n0-chM" firstAttribute="top" secondItem="8B2-Vk-pIM" secondAttribute="bottom" constant="100" id="HWR-Wh-QE2"/>
+                            <constraint firstItem="iTj-n0-chM" firstAttribute="leading" secondItem="JEJ-Z8-95B" secondAttribute="leading" constant="40" id="Hbe-fk-iww"/>
+                            <constraint firstItem="8B2-Vk-pIM" firstAttribute="top" secondItem="JEJ-Z8-95B" secondAttribute="top" constant="10" id="KgX-0a-PoD"/>
+                            <constraint firstItem="JEJ-Z8-95B" firstAttribute="bottom" secondItem="psf-Cd-UrB" secondAttribute="bottom" constant="10" id="P6v-3p-gs2"/>
+                            <constraint firstItem="psf-Cd-UrB" firstAttribute="leading" secondItem="PlU-6v-o9V" secondAttribute="leading" constant="20" id="QfB-3b-e8U"/>
+                            <constraint firstItem="JEJ-Z8-95B" firstAttribute="trailing" secondItem="psf-Cd-UrB" secondAttribute="trailing" constant="20" id="chY-GM-orG"/>
+                            <constraint firstItem="L8a-vY-iBv" firstAttribute="leading" secondItem="JEJ-Z8-95B" secondAttribute="leading" constant="40" id="j34-m4-FJg"/>
+                            <constraint firstItem="JEJ-Z8-95B" firstAttribute="trailing" secondItem="L8a-vY-iBv" secondAttribute="trailing" constant="40" id="sUn-kz-mik"/>
+                            <constraint firstItem="L8a-vY-iBv" firstAttribute="top" secondItem="iTj-n0-chM" secondAttribute="bottom" constant="20" id="sgk-jq-j0b"/>
+                            <constraint firstItem="JEJ-Z8-95B" firstAttribute="trailing" secondItem="iTj-n0-chM" secondAttribute="trailing" constant="40" id="tUR-Tb-uHs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="L8a-vY-iBv" id="rLa-aJ-wx9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09b-9l-VXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car0" width="256" height="144.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

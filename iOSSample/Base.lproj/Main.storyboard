@@ -17,54 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="33Y-JW-5f4">
-                                <rect key="frame" x="20" y="130" width="374" height="45"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-aA-nzf" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                <rect key="frame" x="144" y="130" width="125" height="45"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vG7-X3-3w4" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="190.5" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-oF-pum">
-                                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="45"/>
-                                                <state key="normal" title="UI Object"/>
-                                                <connections>
-                                                    <action selector="btnToUIObjectSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-7j-YyZ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="Kzz-oF-pum" firstAttribute="top" secondItem="vG7-X3-3w4" secondAttribute="top" id="1gD-vp-LOk"/>
-                                            <constraint firstAttribute="height" constant="45" id="21G-Ic-7Mb"/>
-                                            <constraint firstAttribute="trailing" secondItem="Kzz-oF-pum" secondAttribute="trailing" id="kai-vF-0hw"/>
-                                            <constraint firstAttribute="bottom" secondItem="Kzz-oF-pum" secondAttribute="bottom" id="uqP-nw-Wfi"/>
-                                            <constraint firstItem="Kzz-oF-pum" firstAttribute="leading" secondItem="vG7-X3-3w4" secondAttribute="leading" id="ze6-hn-o2L"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-aA-nzf" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="200.5" y="0.0" width="173.5" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOB-3r-ijw">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
-                                                <state key="normal" title="Motion"/>
-                                                <connections>
-                                                    <action selector="btnToMotionSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AE6-cI-Qsr"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="fOB-3r-ijw" secondAttribute="trailing" id="K9Y-xr-L84"/>
-                                            <constraint firstAttribute="height" constant="45" id="ZNR-1S-5OC"/>
-                                            <constraint firstItem="fOB-3r-ijw" firstAttribute="top" secondItem="cmu-aA-nzf" secondAttribute="top" id="hEU-Ox-bJx"/>
-                                            <constraint firstAttribute="bottom" secondItem="fOB-3r-ijw" secondAttribute="bottom" id="oW1-nB-fxU"/>
-                                            <constraint firstItem="fOB-3r-ijw" firstAttribute="leading" secondItem="cmu-aA-nzf" secondAttribute="leading" id="uHH-oa-DvQ"/>
-                                        </constraints>
-                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOB-3r-ijw">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="45"/>
+                                        <state key="normal" title="Motion"/>
+                                        <connections>
+                                            <action selector="btnToMotionSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AE6-cI-Qsr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="vG7-X3-3w4" firstAttribute="width" secondItem="cmu-aA-nzf" secondAttribute="width" multiplier="1.1" id="7qE-8n-HZJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fOB-3r-ijw" secondAttribute="trailing" id="K9Y-xr-L84"/>
+                                    <constraint firstAttribute="height" constant="45" id="ZNR-1S-5OC"/>
+                                    <constraint firstItem="fOB-3r-ijw" firstAttribute="top" secondItem="cmu-aA-nzf" secondAttribute="top" id="hEU-Ox-bJx"/>
+                                    <constraint firstAttribute="bottom" secondItem="fOB-3r-ijw" secondAttribute="bottom" id="oW1-nB-fxU"/>
+                                    <constraint firstItem="fOB-3r-ijw" firstAttribute="leading" secondItem="cmu-aA-nzf" secondAttribute="leading" id="uHH-oa-DvQ"/>
                                 </constraints>
-                            </stackView>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beG-yR-DH0" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                <rect key="frame" x="279" y="130" width="125" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5a-5v-qfl">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="45"/>
+                                        <state key="normal" title="Gesture"/>
+                                        <connections>
+                                            <action selector="btnToGestureSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82R-hJ-Jpf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="l5a-5v-qfl" firstAttribute="leading" secondItem="beG-yR-DH0" secondAttribute="leading" id="0pC-bs-3dB"/>
+                                    <constraint firstAttribute="height" constant="45" id="2Pi-Ku-B5O"/>
+                                    <constraint firstAttribute="trailing" secondItem="l5a-5v-qfl" secondAttribute="trailing" id="2vC-mC-AU0"/>
+                                    <constraint firstAttribute="bottom" secondItem="l5a-5v-qfl" secondAttribute="bottom" id="EQB-Sb-gMn"/>
+                                    <constraint firstItem="l5a-5v-qfl" firstAttribute="top" secondItem="beG-yR-DH0" secondAttribute="top" id="FMU-aC-5Ie"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Sample Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4n-Fi-5ne">
                                 <rect key="frame" x="20" y="54" width="214" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -77,17 +69,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alB-6p-9b5" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="185" width="72" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Br-h1-5O3">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="45"/>
+                                        <state key="normal" title="ScrollView"/>
+                                        <connections>
+                                            <action selector="btnToScrollViewSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXx-Vv-ZoI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2d8-6V-KwU"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Br-h1-5O3" secondAttribute="trailing" id="4LR-zT-8bj"/>
+                                    <constraint firstItem="4Br-h1-5O3" firstAttribute="top" secondItem="alB-6p-9b5" secondAttribute="top" id="Gzd-Pk-cGy"/>
+                                    <constraint firstItem="4Br-h1-5O3" firstAttribute="leading" secondItem="alB-6p-9b5" secondAttribute="leading" id="Q9d-VV-M7s"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Br-h1-5O3" secondAttribute="bottom" id="YBc-W8-G9Y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vG7-X3-3w4" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="130" width="114" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-oF-pum">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="45"/>
+                                        <state key="normal" title="UI Object"/>
+                                        <connections>
+                                            <action selector="btnToUIObjectSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-7j-YyZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Kzz-oF-pum" firstAttribute="top" secondItem="vG7-X3-3w4" secondAttribute="top" id="1gD-vp-LOk"/>
+                                    <constraint firstAttribute="height" constant="45" id="21G-Ic-7Mb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kzz-oF-pum" secondAttribute="trailing" id="kai-vF-0hw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kzz-oF-pum" secondAttribute="bottom" id="uqP-nw-Wfi"/>
+                                    <constraint firstItem="Kzz-oF-pum" firstAttribute="leading" secondItem="vG7-X3-3w4" secondAttribute="leading" id="ze6-hn-o2L"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Xd7-cr-vzG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4xv-Z3-pwI"/>
-                            <constraint firstItem="33Y-JW-5f4" firstAttribute="top" secondItem="Xd7-cr-vzG" secondAttribute="bottom" constant="20" id="8W7-MS-Wvi"/>
+                            <constraint firstItem="alB-6p-9b5" firstAttribute="top" secondItem="vG7-X3-3w4" secondAttribute="bottom" constant="10" id="6e6-3v-KGr"/>
+                            <constraint firstItem="beG-yR-DH0" firstAttribute="leading" secondItem="cmu-aA-nzf" secondAttribute="trailing" constant="10" id="8ms-1r-WPV"/>
+                            <constraint firstItem="cmu-aA-nzf" firstAttribute="centerY" secondItem="vG7-X3-3w4" secondAttribute="centerY" id="LAZ-mH-EXO"/>
+                            <constraint firstItem="alB-6p-9b5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N6Z-tS-XpM"/>
+                            <constraint firstItem="vG7-X3-3w4" firstAttribute="top" secondItem="Xd7-cr-vzG" secondAttribute="bottom" constant="20" id="Qkg-IC-tX9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="beG-yR-DH0" secondAttribute="trailing" constant="10" id="RfV-qD-dvy"/>
                             <constraint firstItem="R4n-Fi-5ne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sag-8D-szP"/>
+                            <constraint firstItem="cmu-aA-nzf" firstAttribute="width" secondItem="vG7-X3-3w4" secondAttribute="width" multiplier="1.1" id="eqR-Nr-vGx"/>
+                            <constraint firstItem="cmu-aA-nzf" firstAttribute="leading" secondItem="vG7-X3-3w4" secondAttribute="trailing" constant="10" id="i5z-rQ-xYh"/>
                             <constraint firstItem="Xd7-cr-vzG" firstAttribute="top" secondItem="R4n-Fi-5ne" secondAttribute="bottom" constant="10" id="jam-1h-Tmt"/>
                             <constraint firstItem="R4n-Fi-5ne" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="k23-hq-b6O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="33Y-JW-5f4" secondAttribute="trailing" constant="20" id="reT-Or-rUG"/>
-                            <constraint firstItem="33Y-JW-5f4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uYc-5T-dYa"/>
+                            <constraint firstItem="vG7-X3-3w4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nss-eF-lPp"/>
+                            <constraint firstItem="beG-yR-DH0" firstAttribute="centerY" secondItem="vG7-X3-3w4" secondAttribute="centerY" id="qzA-EO-PWo"/>
+                            <constraint firstItem="beG-yR-DH0" firstAttribute="width" secondItem="vG7-X3-3w4" secondAttribute="width" multiplier="1.1" id="sB2-Wc-u4d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R4n-Fi-5ne" secondAttribute="trailing" symbolic="YES" id="vE8-Rm-VjG"/>
                         </constraints>
                     </view>

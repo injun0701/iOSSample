@@ -27,6 +27,12 @@ class UIObjectViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToPickerViewAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "UIObject", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "PickerViewViewController") as! PickerViewViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
