@@ -652,7 +652,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-Oy-XO3">
-                                <rect key="frame" x="20" y="298" width="374" height="45"/>
+                                <rect key="frame" x="20" y="308" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFu-hU-7aq" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -752,7 +752,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KYV-aZ-ByO">
-                                <rect key="frame" x="20" y="353" width="374" height="45"/>
+                                <rect key="frame" x="20" y="373" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjE-H5-Iht" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -786,8 +786,8 @@
                             <constraint firstItem="Rrm-Oy-XO3" firstAttribute="leading" secondItem="Crv-aa-gsS" secondAttribute="leading" constant="20" id="FUl-z0-6ta"/>
                             <constraint firstItem="Crv-aa-gsS" firstAttribute="trailing" secondItem="ymi-3a-blu" secondAttribute="trailing" constant="20" id="HQM-eC-tIV"/>
                             <constraint firstItem="lak-Ub-twV" firstAttribute="bottom" secondItem="Crv-aa-gsS" secondAttribute="bottom" constant="-10" id="LGt-xC-jCU"/>
-                            <constraint firstItem="KYV-aZ-ByO" firstAttribute="top" secondItem="Rrm-Oy-XO3" secondAttribute="bottom" constant="10" id="Mfh-al-Xh0"/>
-                            <constraint firstItem="Rrm-Oy-XO3" firstAttribute="top" secondItem="BSD-Lz-tb1" secondAttribute="bottom" constant="10" id="Mlt-Ms-4YR"/>
+                            <constraint firstItem="KYV-aZ-ByO" firstAttribute="top" secondItem="Rrm-Oy-XO3" secondAttribute="bottom" constant="20" id="Mfh-al-Xh0"/>
+                            <constraint firstItem="Rrm-Oy-XO3" firstAttribute="top" secondItem="BSD-Lz-tb1" secondAttribute="bottom" constant="20" id="Mlt-Ms-4YR"/>
                             <constraint firstItem="ymi-3a-blu" firstAttribute="leading" secondItem="FdY-wt-rj4" secondAttribute="leading" constant="20" id="R07-Za-YfY"/>
                             <constraint firstItem="4KP-Tl-yqE" firstAttribute="top" secondItem="ymi-3a-blu" secondAttribute="bottom" constant="20" id="RYn-Db-w7i"/>
                             <constraint firstItem="vPj-J3-iVB" firstAttribute="leading" secondItem="Crv-aa-gsS" secondAttribute="leading" constant="20" id="Yh7-bU-DJh"/>
