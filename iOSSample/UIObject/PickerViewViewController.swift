@@ -41,8 +41,6 @@ class PickerViewViewController: UIViewController {
         pickerView.delegate = self
         //출력하기 위해서 필요한 메소드는 self에서 찾아서 사용 - 없으면 실행 안함
         pickerView.dataSource = self
-        
-        
     }
     
     func imgSetting() {
