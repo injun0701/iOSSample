@@ -30,6 +30,8 @@
 		8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A1C0263018E30077C18A /* ImgViewViewController.swift */; };
 		84576F202632A2F30004FF3D /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84576F1F2632A2F30004FF3D /* TableViewViewController.swift */; };
 		84576F2B2632D3BD0004FF3D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84576F2A2632D3BD0004FF3D /* TableViewCell.swift */; };
+		84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E62263698720094F9CE /* TableView2ViewController.swift */; };
+		84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E652636AC510094F9CE /* TableView3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		8442A1C0263018E30077C18A /* ImgViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewViewController.swift; sourceTree = "<group>"; };
 		84576F1F2632A2F30004FF3D /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		84576F2A2632D3BD0004FF3D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		84647E62263698720094F9CE /* TableView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView2ViewController.swift; sourceTree = "<group>"; };
+		84647E652636AC510094F9CE /* TableView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				842F135D26312D00008A172D /* PickerViewViewController.swift */,
 				84576F1F2632A2F30004FF3D /* TableViewViewController.swift */,
 				84576F2A2632D3BD0004FF3D /* TableViewCell.swift */,
+				84647E62263698720094F9CE /* TableView2ViewController.swift */,
+				84647E652636AC510094F9CE /* TableView3ViewController.swift */,
 			);
 			path = UIObject;
 			sourceTree = "<group>";
@@ -238,11 +244,13 @@
 				8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */,
 				8442A19A262FB6200077C18A /* SubViewBackgroundDesign.swift in Sources */,
 				84576F202632A2F30004FF3D /* TableViewViewController.swift in Sources */,
+				84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */,
 				842F1350263112B7008A172D /* ScrollViewViewController.swift in Sources */,
 				8442A196262FB48C0077C18A /* MotionViewController.swift in Sources */,
 				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
 				8442A1A7262FD56C0077C18A /* LblViewController.swift in Sources */,
 				842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */,
+				84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
 				8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */,
 				842F134C26310416008A172D /* GestureViewController.swift in Sources */,

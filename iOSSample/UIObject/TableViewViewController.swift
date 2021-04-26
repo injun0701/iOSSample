@@ -12,7 +12,7 @@ class TableViewViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     //테이블 뷰에 출력 할 데이터를 소유한 배열
-    var cars = [Dictionary<String, Any>]()
+    var cars = [Dictionary<String, String>]()
     
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -22,7 +22,7 @@ class TableViewViewController: UIViewController {
         super.viewDidLoad()
         
         tableViewSetting()
-        imgSetting()
+        tableViewDataSetting()
     }
     
     func tableViewSetting() {
@@ -32,7 +32,7 @@ class TableViewViewController: UIViewController {
         tableView.separatorStyle = .none
     }
     
-    func imgSetting() {
+    func tableViewDataSetting() {
         for i in 0...5 {
             cars.append(["title": "스포츠카\(i)", "subTitle": "\(i)번째 스포츠카입니다.", "imageName": "car\(i).jpg"])
         }
@@ -64,10 +64,10 @@ extension TableViewViewController: UITableViewDelegate, UITableViewDataSource {
         //indexPath가 셀의 위치
         //indexPath.section은 그룹 번호
         //indexPath.row는 행의 번호
-        cell.lblTitle.text = dict["title"] as? String
-        cell.lblSubTitle.text = dict["subTitle"] as? String
+        cell.lblTitle.text = dict["title"]
+        cell.lblSubTitle.text = dict["subTitle"]
         //이미지 출력
-        cell.imgView.image = UIImage(named: (dict["imageName"] as! String))
+        cell.imgView.image = UIImage(named: (dict["imageName"]!))
         
         //배경색을 짝수로 생성
         if indexPath.row % 2 == 0 {
@@ -94,7 +94,7 @@ extension TableViewViewController: UITableViewDelegate, UITableViewDataSource {
     
     //셀을 선택했을때 설정하는 메소드
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = UIAlertController(title: "선택한 이름", message: cars[indexPath.row]["title"] as? String, preferredStyle: .alert)
+        let alert = UIAlertController(title: "선택한 이름", message: cars[indexPath.row]["title"], preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .default))
         present(alert, animated: true)
     }

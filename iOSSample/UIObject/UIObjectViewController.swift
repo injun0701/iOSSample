@@ -39,6 +39,18 @@ class UIObjectViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToTableView2Action(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "UIObject", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "TableView2ViewController") as! TableView2ViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToTableView3Action(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "UIObject", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "TableView3ViewController") as! TableView3ViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
