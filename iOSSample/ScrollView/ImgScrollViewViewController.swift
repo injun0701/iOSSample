@@ -33,7 +33,7 @@ class ImgScrollViewViewController: UIViewController {
         let imageSize = imgView!.frame.size
         
         //스크롤 뷰 사이즈 설정
-        let scrollViewSize = CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 300)
+        let scrollViewSize = CGRect(x: 0, y: 140, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 300)
         //스크롤뷰 객체 생성
         let scrollView = UIScrollView(frame: scrollViewSize)
         //스크롤 뷰 옵션 설정

@@ -271,11 +271,15 @@ extension TableView3ViewController: UITableViewDelegate, UITableViewDataSource {
         if (cell == nil) { cell = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier:cellIdentifier)
         }
 
-        //섹션 번호에 해당하는 디셔너리를 sectionData에서 가져오기
-        let dic = sectionData[indexPath.section]
-        //가져온 디셔너리에서 section_name이라는 키의 데이터를 가져오기
-        let ar = (dic["data"] as! NSArray) as Array
-        cell!.textLabel!.text = (ar[indexPath.row] as! NSString) as String
+        if isFiltering() {
+            cell!.textLabel!.text = (filteredPlayers[indexPath.row] as NSString) as String
+        } else {
+            //섹션 번호에 해당하는 디셔너리를 sectionData에서 가져오기
+            let dic = sectionData[indexPath.section]
+            //가져온 디셔너리에서 section_name이라는 키의 데이터를 가져오기
+            let ar = (dic["data"] as! NSArray) as Array
+            cell!.textLabel!.text = (ar[indexPath.row] as! NSString) as String
+        }
         
         return cell!
     }

@@ -14,6 +14,10 @@ class CollectionView1ViewController: UIViewController {
     //컬렉션뷰에 출력 할 데이터를 소유한 배열
     var cars = [Dictionary<String, String>]()
     
+    @IBAction func btnBackAction(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
