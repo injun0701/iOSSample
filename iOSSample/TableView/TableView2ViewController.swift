@@ -8,7 +8,26 @@
 import UIKit
 
 class TableView2ViewController: UIViewController {
+    
     @IBOutlet var tableView: UITableView!
+    
+    //refreshControl 객체 생성
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(TableView2ViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
+        refreshControl.tintColor = UIColor.lightGray
+        return refreshControl
+    }()
+    
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        //데이터 추가
+        let item = "apple watch"
+        self.data?.insert(item, at: 0)
+        //refreshControl 제거
+        refreshControl.endRefreshing()
+        //테이블뷰 리로드
+        self.tableView.reloadData()
+    }
     
     var data:Array<String>?
     
@@ -22,6 +41,19 @@ class TableView2ViewController: UIViewController {
             if item == nil || item!.trimmingCharacters(in: .whitespaces).count == 0 {
                 return
             }
+            
+            //리스트 맨 앞(0번)에 추가
+            self.data?.insert(item!, at: 0)
+            //테이블뷰 리로드
+            //self.tableView.reloadData()
+            //테이블뷰 추가 시 애니메이션 동작
+            self.tableView.beginUpdates()
+            //with: .right 등 다양한 애니매이션이 있음
+            self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
+            self.tableView.endUpdates()
+            
+            /*
+            //리스트 맨 뒤에 추가
             self.data?.append(item!)
             //테이블뷰 리로드
             //self.tableView.reloadData()
@@ -30,7 +62,7 @@ class TableView2ViewController: UIViewController {
             //with: .right 등 다양한 애니매이션이 있음
             self.tableView.insertRows(at: [IndexPath(row: self.data!.count-1, section: 0)], with: .automatic)
             self.tableView.endUpdates()
-            
+            */
         })
         self.present(alert, animated: false)
     }
@@ -44,6 +76,10 @@ class TableView2ViewController: UIViewController {
 
         data = ["iPod", "iPhone", "iPad"]
         
+        tableViewSetting()
+    }
+    
+    func tableViewSetting() {
         tableView.delegate = self
         tableView.dataSource = self
         // Drag & Drop 기능을 위한 부분
@@ -51,6 +87,11 @@ class TableView2ViewController: UIViewController {
         tableView.dragDelegate = self
         tableView.dropDelegate = self
         
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+        tableView.addSubview(refreshControl)
+        }
     }
     
 }

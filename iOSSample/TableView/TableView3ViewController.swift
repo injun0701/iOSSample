@@ -18,6 +18,30 @@ class TableView3ViewController: UIViewController {
     //인덱스 항목을 가지고 있을 변수
     var indexes : Array<String> = []
     
+    //검색바 객체 생성
+    let searchController = TableHeaderViewSearchController(searchResultsController: nil)
+    //검색된 결과를 저장할 리스트 생성
+    var filteredPlayers = [String]()
+    
+    //검색 입력 란에 아무 내용도 없는지 확인할 메소드
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+
+    //검색 입력 란에 내용을 입력하면 호출되는 메소드
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredPlayers = data.filter({(player : String) -> Bool in
+            return player.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
+    }
+
+    //검색 입력 란의 상태를 리턴하는 메소드
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
     //이름을 넘겨주면 자음을 리턴해주는 메소드
     func subtract(data:String) -> String{
         var result = data.compare("나")
@@ -81,9 +105,25 @@ class TableView3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        tableViewSetting() 
+        tableViewDataSetting()
+    }
+    
+    func tableViewSetting() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableViewDataSetting()
+        
+        //오른쪽 섹션 네비 색상
+        tableView.sectionIndexColor = UIColor.lightGray
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Player" //플레이스 홀더
+        
+        //테이블뷰 헤더에 서치바 추가
+        tableView.tableHeaderView = searchController.searchBar
+        definesPresentationContext = true
     }
     
     func tableViewDataSetting() {
@@ -189,10 +229,20 @@ class TableView3ViewController: UIViewController {
 extension TableView3ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        //검색바 실행중일때
+        if isFiltering() {
+            return 1
+        }
         return sectionData.count
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? { //섹션 번호에 해당하는 디셔너리를 sectionData에서 가져오기
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        //검색바 실행중일때
+        if isFiltering(){
+            return "검색결과"
+        }
+        
+        //섹션 번호에 해당하는 디셔너리를 sectionData에서 가져오기
         let dic = sectionData[section]
         //가져온 디셔너리에서 section_name이라는 키의 데이터를 가져오기
         let sectionName = (dic["section_name"] as! NSString) as String
@@ -202,6 +252,11 @@ extension TableView3ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //검색바 실행중일때
+        if isFiltering(){
+            return filteredPlayers.count
+        }
+        
         //섹션 번호에 해당하는 디셔너리를 sectionData에서 가져오기
         let dic = sectionData[section]
         //가져온 디셔너리에서 section_name이라는 키의 데이터를 가져오기
@@ -225,5 +280,52 @@ extension TableView3ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
+    //오른쪽 섹션 네비 생성 메소드
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        //검색바 실행중일때
+        if isFiltering(){
+            //안보이게하기 위해 빈값 리턴
+            return []
+        }
+        
+        return indexes
+    }
+    
+    //오른쪽 섹션 네비 클릭시 해당 섹션으로 이동하는 메소드
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        //누른 인덱스의 섹션 인덱스 찾아오기
+        for i in 0 ..< sectionData.count {
+            let dic = sectionData[i]
+            //저장된 saction_name을 찾아오기
+            let sectionName = dic["section_name"] as! String
+            if sectionName == title {
+                return i
+            }
+        }
+        //일치하는 데이터가 없다면 특정영역으로 이동하지 않음
+        return -1
+    }
+    
+}
+
+extension TableView3ViewController: UISearchResultsUpdating {
+    
+    //검색했을때 결과 업데이트하는 메소드
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+    
+}
+
+class TableHeaderViewSearchController: UISearchController {
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print(isActive)
+        
+        if isActive {
+            searchBar.superview?.frame.origin = CGPoint(x: 0, y: 69)
+        }
+    }
     
 }

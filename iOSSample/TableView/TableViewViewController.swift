@@ -14,6 +14,23 @@ class TableViewViewController: UIViewController {
     //테이블 뷰에 출력 할 데이터를 소유한 배열
     var cars = [Dictionary<String, String>]()
     
+    //refreshControl 객체 생성
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(TableViewViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
+        refreshControl.tintColor = UIColor.lightGray
+        return refreshControl
+    }()
+    
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        //데이터 추가
+        cars.insert(["title": "스포츠카5", "subTitle": "5번째 스포츠카입니다.", "imageName": "car5.jpg"], at: 0)
+        //refreshControl 제거
+        refreshControl.endRefreshing()
+        //테이블뷰 리로드
+        self.tableView.reloadData()
+    }
+    
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
@@ -30,14 +47,18 @@ class TableViewViewController: UIViewController {
         tableView.dataSource = self
         //테이블뷰 경계선 없음 설정
         tableView.separatorStyle = .none
+        
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+        tableView.addSubview(refreshControl)
+        }
     }
     
     func tableViewDataSetting() {
         for i in 0...5 {
             cars.append(["title": "스포츠카\(i)", "subTitle": "\(i)번째 스포츠카입니다.", "imageName": "car\(i).jpg"])
         }
-
-        
     }
 }
 

@@ -35,7 +35,23 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToWebViewSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "WebView", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
     
+    @IBAction func btnToTableViewSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "TableViewSample", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "TableViewSampleViewController") as! TableViewSampleViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToCollectionViewSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "CollectionViewSample", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "CollectionViewSampleViewController") as! CollectionViewSampleViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
     
     var timer:Timer! = nil
     

@@ -32,6 +32,14 @@
 		84576F2B2632D3BD0004FF3D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84576F2A2632D3BD0004FF3D /* TableViewCell.swift */; };
 		84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E62263698720094F9CE /* TableView2ViewController.swift */; };
 		84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E652636AC510094F9CE /* TableView3ViewController.swift */; };
+		84855E052637DD39009C1D0B /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E042637DD39009C1D0B /* WebView.storyboard */; };
+		84855E082637DD49009C1D0B /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E072637DD49009C1D0B /* WebViewViewController.swift */; };
+		84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E0D26380786009C1D0B /* TableViewSample.storyboard */; };
+		84855E112638079B009C1D0B /* TableViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E102638079B009C1D0B /* TableViewSampleViewController.swift */; };
+		84855E15263809B6009C1D0B /* CollectionViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E14263809B6009C1D0B /* CollectionViewSampleViewController.swift */; };
+		84855E18263809CE009C1D0B /* CollectionViewSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E17263809CE009C1D0B /* CollectionViewSample.storyboard */; };
+		84855E1B26380AA8009C1D0B /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E1A26380AA8009C1D0B /* CollectionView1ViewController.swift */; };
+		84855E2026380D8D009C1D0B /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E1F26380D8D009C1D0B /* CarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +70,14 @@
 		84576F2A2632D3BD0004FF3D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		84647E62263698720094F9CE /* TableView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView2ViewController.swift; sourceTree = "<group>"; };
 		84647E652636AC510094F9CE /* TableView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView3ViewController.swift; sourceTree = "<group>"; };
+		84855E042637DD39009C1D0B /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		84855E072637DD49009C1D0B /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		84855E0D26380786009C1D0B /* TableViewSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewSample.storyboard; sourceTree = "<group>"; };
+		84855E102638079B009C1D0B /* TableViewSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSampleViewController.swift; sourceTree = "<group>"; };
+		84855E14263809B6009C1D0B /* CollectionViewSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSampleViewController.swift; sourceTree = "<group>"; };
+		84855E17263809CE009C1D0B /* CollectionViewSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewSample.storyboard; sourceTree = "<group>"; };
+		84855E1A26380AA8009C1D0B /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
+		84855E1F26380D8D009C1D0B /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,9 @@
 		8442A17B262FAF700077C18A /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				84855E0B26380747009C1D0B /* CollectionView */,
+				84855E0A2638073A009C1D0B /* TableView */,
+				84855E032637DD1D009C1D0B /* WebView */,
 				842F134E2631129B008A172D /* ScrollView */,
 				842F1347263103E9008A172D /* Gesture */,
 				8442A19E262FCDB40077C18A /* UIObject */,
@@ -156,12 +175,41 @@
 				8442A1B6262FDCB80077C18A /* BtnViewController.swift */,
 				8442A1C0263018E30077C18A /* ImgViewViewController.swift */,
 				842F135D26312D00008A172D /* PickerViewViewController.swift */,
+			);
+			path = UIObject;
+			sourceTree = "<group>";
+		};
+		84855E032637DD1D009C1D0B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				84855E042637DD39009C1D0B /* WebView.storyboard */,
+				84855E072637DD49009C1D0B /* WebViewViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		84855E0A2638073A009C1D0B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
 				84576F1F2632A2F30004FF3D /* TableViewViewController.swift */,
 				84576F2A2632D3BD0004FF3D /* TableViewCell.swift */,
 				84647E62263698720094F9CE /* TableView2ViewController.swift */,
 				84647E652636AC510094F9CE /* TableView3ViewController.swift */,
+				84855E102638079B009C1D0B /* TableViewSampleViewController.swift */,
+				84855E0D26380786009C1D0B /* TableViewSample.storyboard */,
 			);
-			path = UIObject;
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		84855E0B26380747009C1D0B /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				84855E14263809B6009C1D0B /* CollectionViewSampleViewController.swift */,
+				84855E1A26380AA8009C1D0B /* CollectionView1ViewController.swift */,
+				84855E17263809CE009C1D0B /* CollectionViewSample.storyboard */,
+				84855E1F26380D8D009C1D0B /* CarCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8442A189262FAF710077C18A /* LaunchScreen.storyboard in Resources */,
+				84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */,
 				8442A1A1262FCDD80077C18A /* UIObject.storyboard in Resources */,
+				84855E052637DD39009C1D0B /* WebView.storyboard in Resources */,
 				8442A186262FAF710077C18A /* Assets.xcassets in Resources */,
 				8442A193262FB4730077C18A /* Motion.storyboard in Resources */,
 				842F134926310407008A172D /* Gesture.storyboard in Resources */,
+				84855E18263809CE009C1D0B /* CollectionViewSample.storyboard in Resources */,
 				842F1353263112CB008A172D /* ScrollView.storyboard in Resources */,
 				8442A184262FAF700077C18A /* Main.storyboard in Resources */,
 			);
@@ -240,11 +291,15 @@
 			files = (
 				8442A181262FAF700077C18A /* ViewController.swift in Sources */,
 				84576F2B2632D3BD0004FF3D /* TableViewCell.swift in Sources */,
+				84855E112638079B009C1D0B /* TableViewSampleViewController.swift in Sources */,
+				84855E082637DD49009C1D0B /* WebViewViewController.swift in Sources */,
 				8442A17D262FAF700077C18A /* AppDelegate.swift in Sources */,
 				8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */,
 				8442A19A262FB6200077C18A /* SubViewBackgroundDesign.swift in Sources */,
 				84576F202632A2F30004FF3D /* TableViewViewController.swift in Sources */,
 				84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */,
+				84855E2026380D8D009C1D0B /* CarCollectionViewCell.swift in Sources */,
+				84855E1B26380AA8009C1D0B /* CollectionView1ViewController.swift in Sources */,
 				842F1350263112B7008A172D /* ScrollViewViewController.swift in Sources */,
 				8442A196262FB48C0077C18A /* MotionViewController.swift in Sources */,
 				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
@@ -252,6 +307,7 @@
 				842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */,
 				84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
+				84855E15263809B6009C1D0B /* CollectionViewSampleViewController.swift in Sources */,
 				8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */,
 				842F134C26310416008A172D /* GestureViewController.swift in Sources */,
 				8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */,
