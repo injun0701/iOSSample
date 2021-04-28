@@ -53,6 +53,17 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToSocketUseSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "SocketUse", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "SocketUseViewController") as! SocketUseViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+   
+    @IBAction func btnToNetworkSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Network", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "NetworkViewController") as! NetworkViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
     var timer:Timer! = nil
     
     override func viewDidLoad() {

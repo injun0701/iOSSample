@@ -156,13 +156,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mc0-eE-b7a">
                                     <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="138"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CarCollectionViewCell" reuseIdentifier="CarCollectionViewCell" id="pmg-TE-O2T" customClass="CarCollectionViewCell" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="138" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kvl-FX-iMf">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -201,6 +201,35 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CarCollectionheaderView" reuseIdentifier="CarCollectionheaderView" id="3FR-3n-myg" customClass="CarCollectionheaderView" customModule="iOSSample" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WxV-xS-4iv">
+                                            <rect key="frame" x="10" y="0.0" width="240" height="138"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="jhs-If-7M0"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtL-Xy-Lgq">
+                                            <rect key="frame" x="260" y="58.5" width="47" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WxV-xS-4iv" firstAttribute="leading" secondItem="3FR-3n-myg" secondAttribute="leading" constant="10" id="1gf-xc-NVL"/>
+                                        <constraint firstItem="ZtL-Xy-Lgq" firstAttribute="leading" secondItem="WxV-xS-4iv" secondAttribute="trailing" constant="10" id="WWf-Hv-Vyg"/>
+                                        <constraint firstAttribute="bottom" secondItem="WxV-xS-4iv" secondAttribute="bottom" id="Wts-fl-izz"/>
+                                        <constraint firstItem="ZtL-Xy-Lgq" firstAttribute="centerY" secondItem="WxV-xS-4iv" secondAttribute="centerY" id="XOW-zV-We3"/>
+                                        <constraint firstItem="WxV-xS-4iv" firstAttribute="top" secondItem="3FR-3n-myg" secondAttribute="top" id="gds-ze-FUt"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="imgViewHeader" destination="WxV-xS-4iv" id="cGw-L9-Luv"/>
+                                        <outlet property="lblHeader" destination="ZtL-Xy-Lgq" id="KXW-qo-cak"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컬렉션뷰 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-zK-BUQ">
                                 <rect key="frame" x="20" y="54" width="130" height="29"/>

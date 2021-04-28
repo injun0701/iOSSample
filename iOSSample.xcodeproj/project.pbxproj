@@ -40,6 +40,21 @@
 		84855E18263809CE009C1D0B /* CollectionViewSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E17263809CE009C1D0B /* CollectionViewSample.storyboard */; };
 		84855E1B26380AA8009C1D0B /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E1A26380AA8009C1D0B /* CollectionView1ViewController.swift */; };
 		84855E2026380D8D009C1D0B /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E1F26380D8D009C1D0B /* CarCollectionViewCell.swift */; };
+		84D4C4F42639309F00457906 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4C4F32639309F00457906 /* Network.storyboard */; };
+		84D4C4F6263930E300457906 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4C4F5263930E300457906 /* NetworkViewController.swift */; };
+		84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4C4F72639323F00457906 /* WebImgDataViewController.swift */; };
+		84D4C4FA26394B3200457906 /* XmlParsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4C4F926394B3200457906 /* XmlParsingViewController.swift */; };
+		84D4C4FC2639502E00457906 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4C4FB2639502E00457906 /* BookList.swift */; };
+		84E59DF0263910B8000B87DD /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DE9263910B8000B87DD /* TCPClient.swift */; };
+		84E59DF1263910B8000B87DD /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DEA263910B8000B87DD /* Socket.swift */; };
+		84E59DF2263910B8000B87DD /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DEB263910B8000B87DD /* UDPClient.swift */; };
+		84E59DF3263910B8000B87DD /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DEC263910B8000B87DD /* ytcpsocket.c */; };
+		84E59DF4263910B8000B87DD /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DED263910B8000B87DD /* yudpsocket.c */; };
+		84E59DF5263910B8000B87DD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DEF263910B8000B87DD /* Result.swift */; };
+		84F3520F2638F52300BA490C /* CollectionheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3520E2638F52300BA490C /* CollectionheaderView.swift */; };
+		84F352122639063100BA490C /* SocketUse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F352112639063100BA490C /* SocketUse.storyboard */; };
+		84F352142639064600BA490C /* SocketUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F352132639064600BA490C /* SocketUseViewController.swift */; };
+		84F35216263906E100BA490C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F35215263906E100BA490C /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +93,24 @@
 		84855E17263809CE009C1D0B /* CollectionViewSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewSample.storyboard; sourceTree = "<group>"; };
 		84855E1A26380AA8009C1D0B /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
 		84855E1F26380D8D009C1D0B /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		84D4C4F32639309F00457906 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
+		84D4C4F5263930E300457906 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		84D4C4F72639323F00457906 /* WebImgDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImgDataViewController.swift; sourceTree = "<group>"; };
+		84D4C4F926394B3200457906 /* XmlParsingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParsingViewController.swift; sourceTree = "<group>"; };
+		84D4C4FB2639502E00457906 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		84E59DE7263910B7000B87DD /* iOSSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		84E59DE8263910B8000B87DD /* IOSSocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOSSocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		84E59DE9263910B8000B87DD /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
+		84E59DEA263910B8000B87DD /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		84E59DEB263910B8000B87DD /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPClient.swift; sourceTree = "<group>"; };
+		84E59DEC263910B8000B87DD /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		84E59DED263910B8000B87DD /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		84E59DEE263910B8000B87DD /* SwiftSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftSocket.h; sourceTree = "<group>"; };
+		84E59DEF263910B8000B87DD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		84F3520E2638F52300BA490C /* CollectionheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionheaderView.swift; sourceTree = "<group>"; };
+		84F352112639063100BA490C /* SocketUse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SocketUse.storyboard; sourceTree = "<group>"; };
+		84F352132639064600BA490C /* SocketUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUseViewController.swift; sourceTree = "<group>"; };
+		84F35215263906E100BA490C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +163,8 @@
 		8442A17B262FAF700077C18A /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				84D4C4F22639307700457906 /* Network */,
+				84F352102639060C00BA490C /* SocketUse */,
 				84855E0B26380747009C1D0B /* CollectionView */,
 				84855E0A2638073A009C1D0B /* TableView */,
 				84855E032637DD1D009C1D0B /* WebView */,
@@ -208,8 +243,48 @@
 				84855E1A26380AA8009C1D0B /* CollectionView1ViewController.swift */,
 				84855E17263809CE009C1D0B /* CollectionViewSample.storyboard */,
 				84855E1F26380D8D009C1D0B /* CarCollectionViewCell.swift */,
+				84F3520E2638F52300BA490C /* CollectionheaderView.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		84D4C4F22639307700457906 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84D4C4F32639309F00457906 /* Network.storyboard */,
+				84D4C4F5263930E300457906 /* NetworkViewController.swift */,
+				84D4C4F72639323F00457906 /* WebImgDataViewController.swift */,
+				84D4C4F926394B3200457906 /* XmlParsingViewController.swift */,
+				84D4C4FB2639502E00457906 /* BookList.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84E59DE626391094000B87DD /* iOSSocket */ = {
+			isa = PBXGroup;
+			children = (
+				84E59DE8263910B8000B87DD /* IOSSocket-Bridging-Header.h */,
+				84E59DEF263910B8000B87DD /* Result.swift */,
+				84E59DEA263910B8000B87DD /* Socket.swift */,
+				84E59DEE263910B8000B87DD /* SwiftSocket.h */,
+				84E59DE9263910B8000B87DD /* TCPClient.swift */,
+				84E59DEB263910B8000B87DD /* UDPClient.swift */,
+				84E59DEC263910B8000B87DD /* ytcpsocket.c */,
+				84E59DED263910B8000B87DD /* yudpsocket.c */,
+				84E59DE7263910B7000B87DD /* iOSSample-Bridging-Header.h */,
+			);
+			path = iOSSocket;
+			sourceTree = "<group>";
+		};
+		84F352102639060C00BA490C /* SocketUse */ = {
+			isa = PBXGroup;
+			children = (
+				84E59DE626391094000B87DD /* iOSSocket */,
+				84F352112639063100BA490C /* SocketUse.storyboard */,
+				84F352132639064600BA490C /* SocketUseViewController.swift */,
+				84F35215263906E100BA490C /* Reachability.swift */,
+			);
+			path = SocketUse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +318,7 @@
 				TargetAttributes = {
 					8442A178262FAF700077C18A = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -269,8 +345,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F352122639063100BA490C /* SocketUse.storyboard in Resources */,
 				8442A189262FAF710077C18A /* LaunchScreen.storyboard in Resources */,
 				84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */,
+				84D4C4F42639309F00457906 /* Network.storyboard in Resources */,
 				8442A1A1262FCDD80077C18A /* UIObject.storyboard in Resources */,
 				84855E052637DD39009C1D0B /* WebView.storyboard in Resources */,
 				8442A186262FAF710077C18A /* Assets.xcassets in Resources */,
@@ -293,24 +371,37 @@
 				84576F2B2632D3BD0004FF3D /* TableViewCell.swift in Sources */,
 				84855E112638079B009C1D0B /* TableViewSampleViewController.swift in Sources */,
 				84855E082637DD49009C1D0B /* WebViewViewController.swift in Sources */,
+				84E59DF3263910B8000B87DD /* ytcpsocket.c in Sources */,
 				8442A17D262FAF700077C18A /* AppDelegate.swift in Sources */,
+				84E59DF5263910B8000B87DD /* Result.swift in Sources */,
 				8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */,
+				84E59DF2263910B8000B87DD /* UDPClient.swift in Sources */,
 				8442A19A262FB6200077C18A /* SubViewBackgroundDesign.swift in Sources */,
 				84576F202632A2F30004FF3D /* TableViewViewController.swift in Sources */,
+				84E59DF1263910B8000B87DD /* Socket.swift in Sources */,
 				84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */,
+				84D4C4F6263930E300457906 /* NetworkViewController.swift in Sources */,
+				84F3520F2638F52300BA490C /* CollectionheaderView.swift in Sources */,
 				84855E2026380D8D009C1D0B /* CarCollectionViewCell.swift in Sources */,
+				84E59DF0263910B8000B87DD /* TCPClient.swift in Sources */,
 				84855E1B26380AA8009C1D0B /* CollectionView1ViewController.swift in Sources */,
+				84D4C4FA26394B3200457906 /* XmlParsingViewController.swift in Sources */,
+				84F35216263906E100BA490C /* Reachability.swift in Sources */,
 				842F1350263112B7008A172D /* ScrollViewViewController.swift in Sources */,
 				8442A196262FB48C0077C18A /* MotionViewController.swift in Sources */,
+				84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */,
 				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
 				8442A1A7262FD56C0077C18A /* LblViewController.swift in Sources */,
 				842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */,
 				84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */,
+				84F352142639064600BA490C /* SocketUseViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
 				84855E15263809B6009C1D0B /* CollectionViewSampleViewController.swift in Sources */,
 				8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */,
 				842F134C26310416008A172D /* GestureViewController.swift in Sources */,
+				84D4C4FC2639502E00457906 /* BookList.swift in Sources */,
 				8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */,
+				84E59DF4263910B8000B87DD /* yudpsocket.c in Sources */,
 				842F135E26312D00008A172D /* PickerViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWT45ZL3HF;
 				INFOPLIST_FILE = iOSSample/Info.plist;
@@ -468,6 +560,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.injunhong.iOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/SocketUse/iOSSocket/iOSSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -478,6 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWT45ZL3HF;
 				INFOPLIST_FILE = iOSSample/Info.plist;
@@ -488,6 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.injunhong.iOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/SocketUse/iOSSocket/iOSSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
