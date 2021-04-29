@@ -96,11 +96,7 @@ class SocketUseViewController: UIViewController {
             msg = "네트워크 사용 불가능"
         }
         
-        //대화상자로 출력하기
-        let alert = UIAlertController(title: "네트워크 사용 여부", message: msg, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "확인", style: .default))
-                        
-        self.present(alert, animated: true)
+        showAlertBtn1(title: "네트워크 사용 여부", message: msg, btnTitle: "확인") {}
     }
 
 }

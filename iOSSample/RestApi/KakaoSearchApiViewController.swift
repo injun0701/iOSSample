@@ -13,10 +13,7 @@ class KakaoSearchApiViewController: UIViewController {
     
     @IBAction func btnSearchAction(_ sender: UIButton) {
         if tfSearch.text == "" {
-            let alert = UIAlertController(title: "검색어 오류", message: "검색어를 입력하세요.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "취소", style: .default))
-                            
-            self.present(alert, animated: true)
+            showAlertBtn1(title: "검색어 오류", message: "검색어를 입력하세요.", btnTitle: "취소") { }
         } else {
             //네트워크 사용 여부 확인
             networkCheck() { [self] in

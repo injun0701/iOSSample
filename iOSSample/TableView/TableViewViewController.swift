@@ -115,9 +115,7 @@ extension TableViewViewController: UITableViewDelegate, UITableViewDataSource {
     
     //셀을 선택했을때 설정하는 메소드
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = UIAlertController(title: "선택한 이름", message: cars[indexPath.row]["title"], preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "확인", style: .default))
-        present(alert, animated: true)
+        showAlertBtn1(title: "선택한 이름", message: cars[indexPath.row]["title"]!, btnTitle: "확인") {}
     }
 }
 

@@ -102,9 +102,7 @@ extension PostSampleResultViewController: UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //대화상자로 출력하기
-        let alert = UIAlertController(title: "아이템 삭제", message: "삭제하시겠습니까?", preferredStyle: .alert)
-        let btn1 = UIAlertAction(title:  "삭제", style: .default) { (_) in
+        showAlertBtn2(title: "아이템 삭제", message: "삭제하시겠습니까?", btn1Title: "삭제", btn2Title: "취소") {
             //행 번호에 해당하는 데이터를 가져오기
             let item = self.listArray[indexPath.row]
             
@@ -116,28 +114,15 @@ extension PostSampleResultViewController: UITableViewDelegate, UITableViewDataSo
                     let result = jsonResult["result"] as! Int
                     NSLog("결과:\(result)")
                     if result == 1 {
-                        //대화상자로 출력하기
-                        let alert = UIAlertController(title: "삭제 성공", message: "삭제 성공했습니다.", preferredStyle: .alert)
-                        let btn2 = UIAlertAction(title:  "확인", style: .default) { (_) in
+                        self.showAlertBtn1(title: "삭제 성공", message: "삭제 성공했습니다.", btnTitle: "확인") {
                             self.movieDataSetting()
                         }
-                        alert.addAction(btn2)
-                        self.present(alert, animated: true)
                     } else {
-                        //대화상자로 출력하기
-                        let alert = UIAlertController(title: "삭제 실패", message: "삭제 실패했습니다..", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "확인", style: .default))
-                                        
-                        self.present(alert, animated: true)
+                        self.showAlertBtn1(title: "삭제 실패", message: "삭제 실패했습니다.", btnTitle: "확인") {}
                     }
                 }
             }
-        }
-        //3. Alert + AlerAction
-        alert.addAction(btn1)
-        alert.addAction(UIAlertAction(title: "취소", style: .default))
-                        
-        self.present(alert, animated: true)
+        } btn2Action: {}
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

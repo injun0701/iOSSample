@@ -65,13 +65,9 @@ class PostSampleViewController: UIViewController {
     //카메라 설정 화면 이동 얼럿
     func goToCameraSetting() {
         //대화상자로 출력하기
-        let alert = UIAlertController(title: "카메라 권한", message: "카메라 권한 허용이 필요합니다. 설정화면으로 이동하시겠습니까?", preferredStyle: .alert)
-        let btn1 = UIAlertAction(title:  "이동", style: .default) { (_) in
+        showAlertBtn2(title: "카메라 권한", message: "카메라 권한 허용이 필요합니다. 설정화면으로 이동하시겠습니까?", btn1Title:  "이동", btn2Title: "취소") {
             UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-        }
-        alert.addAction(btn1)
-        alert.addAction(UIAlertAction(title: "취소", style: .default))
-        self.present(alert, animated: true)
+        } btn2Action: {}
     }
     
     @IBOutlet var imgView: UIImageView!
@@ -80,11 +76,7 @@ class PostSampleViewController: UIViewController {
     @IBAction func btnPostAction(_ sender: UIButton) {
         
         if tfTitle.text == "" ||  tfPrice.text == "" || tfDescription.text == "" {
-            //대화상자로 출력하기
-            let alert = UIAlertController(title: "입력 오류", message: "빈칸이 없게 모두 작성해 주세요.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "확인", style: .default))
-                            
-            self.present(alert, animated: true)
+            showAlertBtn1(title: "입력 오류", message: "빈칸이 없게 모두 작성해 주세요.", btnTitle: "확인") {}
         } else {
             //업로드
             insert()
@@ -158,32 +150,18 @@ class PostSampleViewController: UIViewController {
                     let result = jsonResult["result"] as! Int
                     NSLog("결과:\(result)")
                     if result == 1 { //업로드 성공
-                        //대화상자로 출력하기
-                        let alert = UIAlertController(title: "업로드 성공", message: "업로드 성공했습니다.", preferredStyle: .alert)
-                        let btn1 = UIAlertAction(title:  "결과 확인", style: .default) { (_) in
+                        self.showAlertBtn2(title: "업로드 성공", message: "업로드 성공했습니다.", btn1Title: "결과 확인", btn2Title: "확인") {
                             //결과 화면으로 이동
                             self.ToRestfulApiSample()
-                        }
-                        alert.addAction(btn1)
-                        alert.addAction(UIAlertAction(title: "확인", style: .default))
-                                        
-                        self.present(alert, animated: true)
+                        } btn2Action: {}
                     } else { //업로드 실패
-                        //대화상자로 출력하기
-                        let alert = UIAlertController(title: "업로드 실패", message: "업로드 실패했습니다..", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "확인", style: .default))
-                                        
-                        self.present(alert, animated: true)
+                        self.showAlertBtn1(title: "업로드 실패", message: "업로드 실패했습니다.", btnTitle: "확인") {}
                     }
                 }
             }
         } else { //이미지 데이터가 nil이면
             print("이미지 이름 : \(imageName)")
-            //대화상자로 출력하기
-            let alert = UIAlertController(title: "업로드 오류", message: "확장자가 jpg, png만 업로드 가능합니다.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "확인", style: .default))
-                            
-            self.present(alert, animated: true)
+            showAlertBtn1(title: "업로드 오류", message: "확장자가 jpg, png만 업로드 가능합니다.", btnTitle: "확인") {}
         }
         
     }
