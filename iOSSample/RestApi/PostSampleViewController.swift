@@ -106,6 +106,16 @@ class PostSampleViewController: UIViewController {
             
             return imageData!
             
+        } else if imageName.contains(".jpeg")  {
+            print("이미지 이름 : \(imageName)")
+            //jpeg파일이면 jpegData()로 imageData세팅
+            let imageData = image?.jpegData(compressionQuality: 0.5)
+            
+            //이미지 확장자 "jpeg"
+            imageDataFileExtension = "jpeg"
+            
+            return imageData!
+            
         } else if imageName.contains(".png")  {
             print("이미지 이름 : \(imageName)")
             //png파일이면 pngData()로 imageData세팅
