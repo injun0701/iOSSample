@@ -55,9 +55,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 //알림 콘텐츠 생성
                 let nContent = UNMutableNotificationContent()
                 nContent.badge = 1
-                nContent.title = "로컬 알림 메시지 제목"
-                nContent.subtitle = "하위 제목"
-                nContent.body = "앱이 종료되었습니다.(메시지 내용)"
+                nContent.title = "앱 알림" //로컬 알림 메시지 제목
+                //nContent.subtitle = "하위 제목" //하위 제목
+                nContent.body = "앱이 종료되었습니다." //로컬 알림 메시지 내용
                 nContent.sound = UNNotificationSound.default
                 //부가 정보 - 알림 객체에게 전달할 데이터
                 nContent.userInfo = ["name":"관리자"]

@@ -26,7 +26,10 @@ class XmlParsingViewController: UIViewController {
         super.viewDidLoad()
         
         tableViewSetting()
-        xmlParsingSetting()
+        //네트워크 사용 여부 확인
+        networkCheck() { [self] in
+            xmlParsingSetting()
+        }
     }
     
     func tableViewSetting() {

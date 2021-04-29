@@ -20,13 +20,14 @@ class WebViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        webAddress = "https://www.naver.com"
-        webKitView.scrollView.bounces = false
-        if let address = webAddress {
-            let url = URL(string: address)
-            let urlRequest = URLRequest(url: url!)
-            webKitView.load(urlRequest)
+        networkCheck() { [self] in
+            webAddress = "https://www.naver.com"
+            webKitView.scrollView.bounces = false
+            if let address = webAddress {
+                let url = URL(string: address)
+                let urlRequest = URLRequest(url: url!)
+                webKitView.load(urlRequest)
+            }
         }
     }
     

@@ -15,10 +15,27 @@ class NetworkViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
-    
     @IBAction func btnToXmlParsingAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Network", bundle: nil)
         let navi = sb.instantiateViewController(withIdentifier: "XmlParsingViewController") as! XmlParsingViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToJsonParsingAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Network", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "JsonParsingViewController") as! JsonParsingViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToThreadAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Network", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "ThreadViewController") as! ThreadViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToAlamofireAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Network", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "AlamofireViewController") as! AlamofireViewController
         navigationController?.pushViewController(navi, animated: true)
     }
     

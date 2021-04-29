@@ -18,16 +18,10 @@ class WebImgDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        
         //네트워크 사용 여부 확인
-        let reachability = Reachability()
-        let result = reachability.isConnectedToNetwork()
-        
-        if result == true {
+        networkCheck() { [self] in
             WebImgDownload()
             WebTextDownload()
-        } else {
-            textView.text = "네트워크를 연결해주세요."
         }
     }
     
@@ -45,6 +39,7 @@ class WebImgDataViewController: UIViewController {
         imgView.image = image
     }
     
+    //웹에서 텍스트 다운
     func WebTextDownload() {
         let textAddr = "https://www.naver.com"
         let textURL = URL(string: textAddr)

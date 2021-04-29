@@ -26,12 +26,13 @@ class SocketUseViewController: UIViewController {
     
     //서버로부터 받은 데이터를 문자열로 만들어서 리턴하는 메소드
     func readResponse(from client:TCPClient) -> String? {
+        sleep(1)
         //받은 데이터를 response에 저장하고 받은게 없으면 nil을 리턴
         guard let response = client.read(1024 * 10)
         else {
             return nil
         }
-        
+        //받은 데이터가 있으면 문자열로 변환해서 리턴
         return String(bytes: response, encoding: .utf8)
     }
     
@@ -61,6 +62,7 @@ class SocketUseViewController: UIViewController {
         case .success: //성공하면 입력한 메시지 전송
             appendToTextView(string: "서버 연결 성공")
             if let response = sendRequest(string: "\(tfMsg.text!)\n\n", using: client) {
+                print("왜 안돼")
                 appendToTextView(string: "응답: \(response)")
             }
         case .failure(let error): //실패하면 실패메시지 출력

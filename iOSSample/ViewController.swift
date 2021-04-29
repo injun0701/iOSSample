@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     
     @IBAction func btnToCollectionViewSampleAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "CollectionViewSample", bundle: nil)
-        let navi = sb.instantiateViewController(withIdentifier: "CollectionViewSampleViewController") as! CollectionViewSampleViewController
+        let navi = sb.instantiateViewController(withIdentifier: "CollectionView1ViewController") as! CollectionView1ViewController
         navigationController?.pushViewController(navi, animated: true)
     }
     
@@ -64,6 +64,13 @@ class ViewController: UIViewController {
         let navi = sb.instantiateViewController(withIdentifier: "NetworkViewController") as! NetworkViewController
         navigationController?.pushViewController(navi, animated: true)
     }
+    
+    @IBAction func btnToRestfulApiSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "RestApi", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "RestfulApiViewController") as! RestApiViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     var timer:Timer! = nil
     
     override func viewDidLoad() {
