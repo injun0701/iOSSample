@@ -78,8 +78,11 @@ class PostSampleViewController: UIViewController {
         if tfTitle.text == "" ||  tfPrice.text == "" || tfDescription.text == "" {
             showAlertBtn1(title: "입력 오류", message: "빈칸이 없게 모두 작성해 주세요.", btnTitle: "확인") {}
         } else {
-            //업로드
-            insert()
+            //네트워크 사용 여부 확인
+            networkCheck() { [self] in
+                //업로드
+                insert()
+            }
         }
        
     }
@@ -132,6 +135,8 @@ class PostSampleViewController: UIViewController {
             dateFormatter.dateFormat =  "yyyy-MM-dd"
             let date = dateFormatter.string(from: Date())
             
+            let header: HTTPHeaders = []
+            
             let url = "http://cyberadam.cafe24.com/item/insert"
             
             AF.upload(multipartFormData: { [self] multipartFormData in //알라모파이어로 업로드
@@ -144,16 +149,18 @@ class PostSampleViewController: UIViewController {
                 //이미지파일 전송
                 multipartFormData.append(imageData, withName: "pictureurl", fileName: self.imageName, mimeType: "image/\(imageDataFileExtension)")
                 
-            }, to: url).responseJSON { response in //결과값 받기
+            }, to: url, method: .post, headers: header).responseJSON { response in //결과값 받기
                 
                 if let jsonResult = response.value as? [String: Any] {
                     let result = jsonResult["result"] as! Int
                     NSLog("결과:\(result)")
                     if result == 1 { //업로드 성공
-                        self.showAlertBtn2(title: "업로드 성공", message: "업로드 성공했습니다.", btn1Title: "결과 확인", btn2Title: "확인") {
+                        self.showAlertBtn2(title: "업로드 성공", message: "업로드 성공했습니다.", btn1Title: "확인", btn2Title: "결과 보기") {
+                            
+                        } btn2Action: {
                             //결과 화면으로 이동
                             self.ToRestfulApiSample()
-                        } btn2Action: {}
+                        }
                     } else { //업로드 실패
                         self.showAlertBtn1(title: "업로드 실패", message: "업로드 실패했습니다.", btnTitle: "확인") {}
                     }

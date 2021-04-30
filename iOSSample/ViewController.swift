@@ -71,6 +71,12 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToLocalDataSaveSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "LocalDataSave", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "LocalDataSaveViewController") as! LocalDataSaveViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     var timer:Timer! = nil
     
     override func viewDidLoad() {

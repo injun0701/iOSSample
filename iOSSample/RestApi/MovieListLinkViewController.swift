@@ -1,18 +1,21 @@
 //
-//  WebViewViewController.swift
+//  MovieListLinkViewController.swift
 //  iOSSample
 //
-//  Created by HongInJun on 2021/04/27.
+//  Created by HongInJun on 2021/04/30.
 //
 
 import UIKit
 import WebKit
 
-class WebViewViewController: UIViewController {
-    
+class MovieListLinkViewController: UIViewController {
+
+    @IBOutlet var lblTitle: UILabel!
     @IBOutlet var webKitView: WKWebView!
     
-    var webAddress : String!
+    var movieLink: String?
+    var movieTitle: String?
+    
     
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -21,19 +24,18 @@ class WebViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        linkSetting() 
+        linkSetting()
     }
     
     func linkSetting() {
+        lblTitle.text = movieTitle
         networkCheck() { [self] in
-            webAddress = "https://www.naver.com"
             webKitView.scrollView.bounces = false
-            if let address = webAddress {
+            if let address = movieLink {
                 let url = URL(string: address)
                 let urlRequest = URLRequest(url: url!)
                 webKitView.load(urlRequest)
             }
         }
     }
-    
 }

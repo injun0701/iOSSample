@@ -102,7 +102,9 @@ extension PostSampleResultViewController: UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        showAlertBtn2(title: "아이템 삭제", message: "삭제하시겠습니까?", btn1Title: "삭제", btn2Title: "취소") {
+        showAlertBtn2(title: "아이템 삭제", message: "삭제하시겠습니까?", btn1Title: "취소", btn2Title: "삭제") {
+           
+        } btn2Action: {
             //행 번호에 해당하는 데이터를 가져오기
             let item = self.listArray[indexPath.row]
             
@@ -122,7 +124,7 @@ extension PostSampleResultViewController: UITableViewDelegate, UITableViewDataSo
                     }
                 }
             }
-        } btn2Action: {}
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

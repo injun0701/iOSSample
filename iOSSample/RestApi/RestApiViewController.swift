@@ -21,6 +21,11 @@ class RestApiViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToMovieListAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "RestApi", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "AlamofireMovieListViewController") as! MovieListViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
     
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
