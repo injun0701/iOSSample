@@ -103,7 +103,7 @@ extension TableView2ViewController: UITableViewDelegate, UITableViewDataSource, 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
+        let cellIdentifier = "cell"
         var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
         if (cell == nil) {
             cell = UITableViewCell(style:.default, reuseIdentifier:cellIdentifier)

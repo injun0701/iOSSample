@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8411FEC3263F836600527296 /* PhoneBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEC2263F836600527296 /* PhoneBookViewController.swift */; };
+		8411FED2263F884000527296 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEC8263F883F00527296 /* FMDatabaseAdditions.m */; };
+		8411FED3263F884000527296 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FECA263F883F00527296 /* FMDatabase.m */; };
+		8411FED4263F884000527296 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FECC263F883F00527296 /* FMDatabasePool.m */; };
+		8411FED5263F884000527296 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FECD263F883F00527296 /* FMDatabaseQueue.m */; };
+		8411FED6263F884000527296 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FED0263F883F00527296 /* FMResultSet.m */; };
+		8411FEDB263F9D3100527296 /* PhoneBookDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEDA263F9D3100527296 /* PhoneBookDAO.swift */; };
+		8411FF04263FDBC300527296 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411FF03263FDBC300527296 /* ToDoViewController.swift */; };
+		8411FF06263FE85600527296 /* ToDoInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411FF05263FE85600527296 /* ToDoInputViewController.swift */; };
+		8411FF0A263FF7A100527296 /* iOSSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8411FF08263FF7A100527296 /* iOSSample.xcdatamodeld */; };
 		8422FCCF263B945400F688FD /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422FCCE263B945400F688FD /* MovieListViewController.swift */; };
 		8422FCD1263B9B1B00F688FD /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422FCD0263B9B1B00F688FD /* MovieListTableViewCell.swift */; };
 		8422FCD3263BA45300F688FD /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422FCD2263BA45300F688FD /* MovieVO.swift */; };
@@ -80,6 +90,23 @@
 
 /* Begin PBXFileReference section */
 		63E697018CECE9168504E659 /* Pods_iOSSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411FEC2263F836600527296 /* PhoneBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookViewController.swift; sourceTree = "<group>"; };
+		8411FEC4263F837000527296 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8411FEC7263F883F00527296 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		8411FEC8263F883F00527296 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		8411FEC9263F883F00527296 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8411FECA263F883F00527296 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		8411FECB263F883F00527296 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		8411FECC263F883F00527296 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		8411FECD263F883F00527296 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		8411FECE263F883F00527296 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		8411FECF263F883F00527296 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		8411FED0263F883F00527296 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		8411FED1263F884000527296 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		8411FEDA263F9D3100527296 /* PhoneBookDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookDAO.swift; sourceTree = "<group>"; };
+		8411FF03263FDBC300527296 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		8411FF05263FE85600527296 /* ToDoInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInputViewController.swift; sourceTree = "<group>"; };
+		8411FF09263FF7A100527296 /* iOSSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSSample.xcdatamodel; sourceTree = "<group>"; };
 		8422FCCE263B945400F688FD /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		8422FCD0263B9B1B00F688FD /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		8422FCD2263BA45300F688FD /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
@@ -141,7 +168,6 @@
 		84D4C4F926394B3200457906 /* XmlParsingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParsingViewController.swift; sourceTree = "<group>"; };
 		84D4C4FB2639502E00457906 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		84E59DE7263910B7000B87DD /* iOSSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSample-Bridging-Header.h"; sourceTree = "<group>"; };
-		84E59DE8263910B8000B87DD /* IOSSocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOSSocket-Bridging-Header.h"; sourceTree = "<group>"; };
 		84E59DE9263910B8000B87DD /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
 		84E59DEA263910B8000B87DD /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
 		84E59DEB263910B8000B87DD /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPClient.swift; sourceTree = "<group>"; };
@@ -169,9 +195,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8411FEC6263F877500527296 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				8411FED1263F884000527296 /* FMDatabase.h */,
+				8411FECA263F883F00527296 /* FMDatabase.m */,
+				8411FECB263F883F00527296 /* FMDatabaseAdditions.h */,
+				8411FEC8263F883F00527296 /* FMDatabaseAdditions.m */,
+				8411FECF263F883F00527296 /* FMDatabasePool.h */,
+				8411FECC263F883F00527296 /* FMDatabasePool.m */,
+				8411FEC9263F883F00527296 /* FMDatabaseQueue.h */,
+				8411FECD263F883F00527296 /* FMDatabaseQueue.m */,
+				8411FECE263F883F00527296 /* FMDB.h */,
+				8411FEC7263F883F00527296 /* FMResultSet.h */,
+				8411FED0263F883F00527296 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		8411FEDC263F9D3E00527296 /* SQLiteSample */ = {
+			isa = PBXGroup;
+			children = (
+				8411FEC6263F877500527296 /* fmdb */,
+				8411FEC2263F836600527296 /* PhoneBookViewController.swift */,
+				8411FEDA263F9D3100527296 /* PhoneBookDAO.swift */,
+			);
+			path = SQLiteSample;
+			sourceTree = "<group>";
+		};
+		8411FF07263FE86400527296 /* CoreDataSample */ = {
+			isa = PBXGroup;
+			children = (
+				8411FF05263FE85600527296 /* ToDoInputViewController.swift */,
+				8411FF03263FDBC300527296 /* ToDoViewController.swift */,
+			);
+			path = CoreDataSample;
+			sourceTree = "<group>";
+		};
 		8422FCD6263BE83500F688FD /* LocalDataSave */ = {
 			isa = PBXGroup;
 			children = (
+				8411FF07263FE86400527296 /* CoreDataSample */,
+				8411FEDC263F9D3E00527296 /* SQLiteSample */,
 				8422FCD7263BE85500F688FD /* LocalDataSave.storyboard */,
 				8422FCD9263BE86700F688FD /* LocalDataSaveViewController.swift */,
 				8422FCDB263BEABE00F688FD /* AppDelegateViewController.swift */,
@@ -242,6 +307,8 @@
 				84894546263A99FE00F50111 /* Component */,
 				8442A198262FB5F00077C18A /* Extension */,
 				8442A18A262FAF710077C18A /* Info.plist */,
+				84E59DE7263910B7000B87DD /* iOSSample-Bridging-Header.h */,
+				8411FF08263FF7A100527296 /* iOSSample.xcdatamodeld */,
 			);
 			path = iOSSample;
 			sourceTree = "<group>";
@@ -355,7 +422,6 @@
 		84E59DE626391094000B87DD /* iOSSocket */ = {
 			isa = PBXGroup;
 			children = (
-				84E59DE8263910B8000B87DD /* IOSSocket-Bridging-Header.h */,
 				84E59DEF263910B8000B87DD /* Result.swift */,
 				84E59DEA263910B8000B87DD /* Socket.swift */,
 				84E59DEE263910B8000B87DD /* SwiftSocket.h */,
@@ -363,7 +429,6 @@
 				84E59DEB263910B8000B87DD /* UDPClient.swift */,
 				84E59DEC263910B8000B87DD /* ytcpsocket.c */,
 				84E59DED263910B8000B87DD /* yudpsocket.c */,
-				84E59DE7263910B7000B87DD /* iOSSample-Bridging-Header.h */,
 			);
 			path = iOSSocket;
 			sourceTree = "<group>";
@@ -381,6 +446,7 @@
 		A14F6A78927691A8723CB3C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8411FEC4263F837000527296 /* libsqlite3.0.tbd */,
 				63E697018CECE9168504E659 /* Pods_iOSSample.framework */,
 			);
 			name = Frameworks;
@@ -533,6 +599,8 @@
 				84E59DF5263910B8000B87DD /* Result.swift in Sources */,
 				84894543263A8E9C00F50111 /* RestApiViewController.swift in Sources */,
 				8422FCD3263BA45300F688FD /* MovieVO.swift in Sources */,
+				8411FEDB263F9D3100527296 /* PhoneBookDAO.swift in Sources */,
+				8411FF04263FDBC300527296 /* ToDoViewController.swift in Sources */,
 				8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */,
 				84E59DF2263910B8000B87DD /* UDPClient.swift in Sources */,
 				8442A19A262FB6200077C18A /* SubViewBackgroundDesign.swift in Sources */,
@@ -554,25 +622,33 @@
 				8442A196262FB48C0077C18A /* MotionViewController.swift in Sources */,
 				84AFF166263AAA920068FE4E /* PostSampleResultViewController.swift in Sources */,
 				84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */,
+				8411FED4263F884000527296 /* FMDatabasePool.m in Sources */,
 				84894536263A3B2A00F50111 /* JsonParsingViewController.swift in Sources */,
 				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
 				84894545263A8F0800F50111 /* KakaoSearchApiViewController.swift in Sources */,
 				84AFF164263AA03F0068FE4E /* PostSampleViewController.swift in Sources */,
 				8442A1A7262FD56C0077C18A /* LblViewController.swift in Sources */,
 				842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */,
+				8411FED3263F884000527296 /* FMDatabase.m in Sources */,
 				84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */,
 				8489453A263A56C400F50111 /* ThreadDownloader.swift in Sources */,
 				84F352142639064600BA490C /* SocketUseViewController.swift in Sources */,
 				8422FCE0263C001F00F688FD /* DocumentFileSaveViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
+				8411FED5263F884000527296 /* FMDatabaseQueue.m in Sources */,
 				8489453E263A725600F50111 /* Extension.swift in Sources */,
 				84855E15263809B6009C1D0B /* CollectionViewSampleViewController.swift in Sources */,
 				8442A1B7262FDCB80077C18A /* BtnViewController.swift in Sources */,
+				8411FED2263F884000527296 /* FMDatabaseAdditions.m in Sources */,
 				84894538263A54AD00F50111 /* ThreadViewController.swift in Sources */,
 				842F134C26310416008A172D /* GestureViewController.swift in Sources */,
+				8411FF0A263FF7A100527296 /* iOSSample.xcdatamodeld in Sources */,
 				8422FCDA263BE86700F688FD /* LocalDataSaveViewController.swift in Sources */,
+				8411FED6263F884000527296 /* FMResultSet.m in Sources */,
+				8411FEC3263F836600527296 /* PhoneBookViewController.swift in Sources */,
 				84D4C4FC2639502E00457906 /* BookList.swift in Sources */,
 				8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */,
+				8411FF06263FE85600527296 /* ToDoInputViewController.swift in Sources */,
 				84E59DF4263910B8000B87DD /* yudpsocket.c in Sources */,
 				842F135E26312D00008A172D /* PickerViewViewController.swift in Sources */,
 			);
@@ -733,7 +809,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.injunhong.iOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/SocketUse/iOSSocket/iOSSample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/iOSSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -757,7 +833,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.injunhong.iOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/SocketUse/iOSSocket/iOSSample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/iOSSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -785,6 +861,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8411FF08263FF7A100527296 /* iOSSample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8411FF09263FF7A100527296 /* iOSSample.xcdatamodel */,
+			);
+			currentVersion = 8411FF09263FF7A100527296 /* iOSSample.xcdatamodel */;
+			path = iOSSample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8442A171262FAF700077C18A /* Project object */;
 }

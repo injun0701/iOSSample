@@ -21,6 +21,18 @@ class LocalDataSaveViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func toSQLiteSample(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "PhoneBookViewController") as! PhoneBookViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toCoreDataSample(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "LocalDataSave", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "ToDoViewController") as! ToDoViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

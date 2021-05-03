@@ -60,3 +60,18 @@ extension UIViewController {
     }
 
 }
+
+//MARK: 네비게이션컨트롤러 extension
+extension UINavigationController {
+    
+    //이전 스텍 체크하는 함수
+    func previousViewController() -> UIViewController?{
+        
+        let lenght = self.viewControllers.count
+        
+        let previousViewController: UIViewController? = lenght >= 2 ? self.viewControllers[lenght-2] : nil
+        
+        return previousViewController
+    }
+    
+}
