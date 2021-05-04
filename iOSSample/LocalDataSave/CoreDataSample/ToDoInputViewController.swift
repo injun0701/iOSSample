@@ -6,11 +6,22 @@
 //
 
 import UIKit
+import CoreData
 
 class ToDoInputViewController: UIViewController {
     @IBOutlet var tfTitle: UITextField!
     @IBOutlet var tvCentents: UITextView!
     @IBOutlet var dpRuntime: UIDatePicker!
+    @IBOutlet var btnAdd: UIButton!
+    
+    //삽입과 수정을 구분하기 위한 프로퍼티
+    var mode = "저장"
+    
+    //수정을 위해 필요한 데이터
+    var object:NSManagedObject!
+    var dataTitle = ""
+    var dataContents = ""
+    var dataRuntime = Date()
     
     @IBAction func btnAddAction(_ sender: UIButton) {
         //입력한 데이터 가져오기
@@ -25,14 +36,27 @@ class ToDoInputViewController: UIViewController {
                 
                 //자신을 출력한 뷰(상위 뷰) 컨트롤러 찾아오기
                 let toDoListVC = self.navigationController?.previousViewController() as! ToDoViewController
-                //상위 뷰에서 데이터 삽입하는 메소드 호출
-                let result = toDoListVC.save(title: title!, contents: contents!, runtime: runtime)
-                //상위 뷰에서 데이터 삽입하는 메소드 호출 메소드의 리턴값
-                if result == true {
-                    NSLog("데이터 삽입 성공")
+                
+                if mode == "저장" {
+                    //상위 뷰에서 데이터 삽입하는 메소드 호출
+                    let result = toDoListVC.save(title: title!, contents: contents!, runtime: runtime)
+                    //상위 뷰에서 데이터 삽입하는 메소드 호출 메소드의 리턴값
+                    if result == true {
+                        NSLog("데이터 삽입 성공")
+                    } else {
+                        NSLog("데이터 삽입 실패")
+                    }
                 } else {
-                    NSLog("데이터 삽입 실패")
+                    //상위 뷰에서 데이터 삽입하는 메소드 호출
+                    let result = toDoListVC.edit(object: object,title: title!, contents: contents!, runtime: runtime)
+                    //상위 뷰에서 데이터 수정하는 메소드 호출 메소드의 리턴값
+                    if result == true {
+                        NSLog("데이터 수정 성공")
+                    } else {
+                        NSLog("데이터 수정 실패")
+                    }
                 }
+                
             } else {
                 NSLog("상위 뷰가 틀림")
             }
@@ -57,6 +81,13 @@ class ToDoInputViewController: UIViewController {
         tvCentents.layer.borderColor = UIColor(displayP3Red: 200/255, green: 200/255, blue: 200/255, alpha: 1).cgColor
         tvCentents.layer.masksToBounds = true
         tvCentents.layer.cornerRadius = 4
+        
+        if mode == "수정" {
+            btnAdd.setTitle(mode, for: .normal)
+            tfTitle.text = dataTitle
+            tvCentents.text = dataContents
+            dpRuntime.date = dataRuntime
+        }
         
     }
     

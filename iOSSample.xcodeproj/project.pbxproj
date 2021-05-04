@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8403B53D264100170085E736 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403B53C264100170085E736 /* LogViewController.swift */; };
 		8411FEC3263F836600527296 /* PhoneBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEC2263F836600527296 /* PhoneBookViewController.swift */; };
 		8411FED2263F884000527296 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEC8263F883F00527296 /* FMDatabaseAdditions.m */; };
 		8411FED3263F884000527296 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FECA263F883F00527296 /* FMDatabase.m */; };
@@ -90,6 +91,7 @@
 
 /* Begin PBXFileReference section */
 		63E697018CECE9168504E659 /* Pods_iOSSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8403B53C264100170085E736 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		8411FEC2263F836600527296 /* PhoneBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookViewController.swift; sourceTree = "<group>"; };
 		8411FEC4263F837000527296 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8411FEC7263F883F00527296 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				8411FF05263FE85600527296 /* ToDoInputViewController.swift */,
+				8403B53C264100170085E736 /* LogViewController.swift */,
 				8411FF03263FDBC300527296 /* ToDoViewController.swift */,
 			);
 			path = CoreDataSample;
@@ -624,6 +627,7 @@
 				84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */,
 				8411FED4263F884000527296 /* FMDatabasePool.m in Sources */,
 				84894536263A3B2A00F50111 /* JsonParsingViewController.swift in Sources */,
+				8403B53D264100170085E736 /* LogViewController.swift in Sources */,
 				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
 				84894545263A8F0800F50111 /* KakaoSearchApiViewController.swift in Sources */,
 				84AFF164263AA03F0068FE4E /* PostSampleViewController.swift in Sources */,

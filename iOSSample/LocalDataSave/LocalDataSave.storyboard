@@ -647,6 +647,72 @@
             </objects>
             <point key="canvasLocation" x="3166.666666666667" y="40.848214285714285"/>
         </scene>
+        <!--Log View Controller-->
+        <scene sceneID="XI4-Tu-JX2">
+            <objects>
+                <viewController storyboardIdentifier="LogViewController" id="pk4-3I-PpM" customClass="LogViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQr-t3-Cqr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-qi-4Ja">
+                                <rect key="frame" x="0.0" y="113" width="414" height="783"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoreData - ToDo 샘플 Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-aK-hyw">
+                                <rect key="frame" x="20" y="54" width="278" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BmE-Se-Ysw">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXW-Fg-Orn" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-dV-9aB">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="pk4-3I-PpM" eventType="touchUpInside" id="qFO-96-LJJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1lh-dV-9aB" secondAttribute="bottom" id="2g6-R6-oTh"/>
+                                            <constraint firstItem="1lh-dV-9aB" firstAttribute="top" secondItem="jXW-Fg-Orn" secondAttribute="top" id="5Ut-cb-9jY"/>
+                                            <constraint firstAttribute="trailing" secondItem="1lh-dV-9aB" secondAttribute="trailing" id="Trb-Tg-k49"/>
+                                            <constraint firstItem="1lh-dV-9aB" firstAttribute="leading" secondItem="jXW-Fg-Orn" secondAttribute="leading" id="UR2-pt-KCt"/>
+                                            <constraint firstAttribute="height" constant="45" id="xT0-Vu-c2S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Lg-lZ-u0L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lI3-qi-4Ja" firstAttribute="leading" secondItem="5Lg-lZ-u0L" secondAttribute="leading" id="9Sw-KF-Yb5"/>
+                            <constraint firstItem="lI3-qi-4Ja" firstAttribute="trailing" secondItem="5Lg-lZ-u0L" secondAttribute="trailing" id="B1V-n1-iCb"/>
+                            <constraint firstItem="lI3-qi-4Ja" firstAttribute="top" secondItem="GoD-aK-hyw" secondAttribute="bottom" constant="30" id="Nto-bM-3J7"/>
+                            <constraint firstItem="5Lg-lZ-u0L" firstAttribute="trailing" secondItem="BmE-Se-Ysw" secondAttribute="trailing" constant="20" id="Xs5-jo-LF1"/>
+                            <constraint firstItem="5Lg-lZ-u0L" firstAttribute="bottom" secondItem="BmE-Se-Ysw" secondAttribute="bottom" constant="10" id="boe-VR-xRa"/>
+                            <constraint firstAttribute="bottom" secondItem="lI3-qi-4Ja" secondAttribute="bottom" id="hsC-Dv-HjZ"/>
+                            <constraint firstItem="BmE-Se-Ysw" firstAttribute="leading" secondItem="5Lg-lZ-u0L" secondAttribute="leading" constant="20" id="kzX-cU-reu"/>
+                            <constraint firstItem="GoD-aK-hyw" firstAttribute="leading" secondItem="5Lg-lZ-u0L" secondAttribute="leading" constant="20" id="uRS-Kr-mTe"/>
+                            <constraint firstItem="GoD-aK-hyw" firstAttribute="top" secondItem="5Lg-lZ-u0L" secondAttribute="top" constant="10" id="v76-Y4-bwd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lI3-qi-4Ja" id="h7e-BN-uvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZG-7e-TuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3938" y="-650"/>
+        </scene>
         <!--To Do View Controller-->
         <scene sceneID="sgY-t5-rmp">
             <objects>
@@ -861,6 +927,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnAdd" destination="em0-wl-hRp" id="UMa-rZ-tEv"/>
                         <outlet property="dpRuntime" destination="wbG-J7-M1T" id="O4J-64-M5G"/>
                         <outlet property="tfTitle" destination="uoS-Yj-dQo" id="Z3O-PZ-TUR"/>
                         <outlet property="tvCentents" destination="qyp-Vy-pKs" id="x2k-4s-WEh"/>
