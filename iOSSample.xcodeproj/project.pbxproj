@@ -50,6 +50,9 @@
 		8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442A1C0263018E30077C18A /* ImgViewViewController.swift */; };
 		84576F202632A2F30004FF3D /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84576F1F2632A2F30004FF3D /* TableViewViewController.swift */; };
 		84576F2B2632D3BD0004FF3D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84576F2A2632D3BD0004FF3D /* TableViewCell.swift */; };
+		845B03E52647F1D900062A3A /* AES256.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845B03E42647F1D900062A3A /* AES256.storyboard */; };
+		845B03E72647F1E700062A3A /* AES256ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B03E62647F1E700062A3A /* AES256ViewController.swift */; };
+		845B03E92647F4AF00062A3A /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B03E82647F4AF00062A3A /* AES.swift */; };
 		84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E62263698720094F9CE /* TableView2ViewController.swift */; };
 		84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E652636AC510094F9CE /* TableView3ViewController.swift */; };
 		84855E052637DD39009C1D0B /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E042637DD39009C1D0B /* WebView.storyboard */; };
@@ -143,6 +146,9 @@
 		8442A1C0263018E30077C18A /* ImgViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewViewController.swift; sourceTree = "<group>"; };
 		84576F1F2632A2F30004FF3D /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		84576F2A2632D3BD0004FF3D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		845B03E42647F1D900062A3A /* AES256.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AES256.storyboard; sourceTree = "<group>"; };
+		845B03E62647F1E700062A3A /* AES256ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256ViewController.swift; sourceTree = "<group>"; };
+		845B03E82647F4AF00062A3A /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		84647E62263698720094F9CE /* TableView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView2ViewController.swift; sourceTree = "<group>"; };
 		84647E652636AC510094F9CE /* TableView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView3ViewController.swift; sourceTree = "<group>"; };
 		84855E042637DD39009C1D0B /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
@@ -290,6 +296,7 @@
 		8442A17B262FAF700077C18A /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				845B03E32647F1AA00062A3A /* AES256 */,
 				8422FCD6263BE83500F688FD /* LocalDataSave */,
 				8489453F263A8E6F00F50111 /* RestApi */,
 				84D4C4F22639307700457906 /* Network */,
@@ -345,6 +352,16 @@
 				842F135D26312D00008A172D /* PickerViewViewController.swift */,
 			);
 			path = UIObject;
+			sourceTree = "<group>";
+		};
+		845B03E32647F1AA00062A3A /* AES256 */ = {
+			isa = PBXGroup;
+			children = (
+				845B03E82647F4AF00062A3A /* AES.swift */,
+				845B03E42647F1D900062A3A /* AES256.storyboard */,
+				845B03E62647F1E700062A3A /* AES256ViewController.swift */,
+			);
+			path = AES256;
 			sourceTree = "<group>";
 		};
 		84855E032637DD1D009C1D0B /* WebView */ = {
@@ -528,6 +545,7 @@
 				8442A189262FAF710077C18A /* LaunchScreen.storyboard in Resources */,
 				84894541263A8E8A00F50111 /* RestApi.storyboard in Resources */,
 				84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */,
+				845B03E52647F1D900062A3A /* AES256.storyboard in Resources */,
 				84D4C4F42639309F00457906 /* Network.storyboard in Resources */,
 				8422FCD8263BE85500F688FD /* LocalDataSave.storyboard in Resources */,
 				8442A1A1262FCDD80077C18A /* UIObject.storyboard in Resources */,
@@ -608,6 +626,7 @@
 				84E59DF2263910B8000B87DD /* UDPClient.swift in Sources */,
 				8442A19A262FB6200077C18A /* SubViewBackgroundDesign.swift in Sources */,
 				84576F202632A2F30004FF3D /* TableViewViewController.swift in Sources */,
+				845B03E72647F1E700062A3A /* AES256ViewController.swift in Sources */,
 				84AFF16A263AB44E0068FE4E /* PostSampleResultCell.swift in Sources */,
 				84E59DF1263910B8000B87DD /* Socket.swift in Sources */,
 				84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */,
@@ -627,6 +646,7 @@
 				84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */,
 				8411FED4263F884000527296 /* FMDatabasePool.m in Sources */,
 				84894536263A3B2A00F50111 /* JsonParsingViewController.swift in Sources */,
+				845B03E92647F4AF00062A3A /* AES.swift in Sources */,
 				8403B53D264100170085E736 /* LogViewController.swift in Sources */,
 				842F13572631217D008A172D /* ImgScrollViewViewController.swift in Sources */,
 				84894545263A8F0800F50111 /* KakaoSearchApiViewController.swift in Sources */,

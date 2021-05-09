@@ -77,6 +77,12 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToAES256SampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "AES256", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "AES256ViewController") as! AES256ViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     var timer:Timer! = nil
     
     override func viewDidLoad() {

@@ -565,10 +565,10 @@
                                 <rect key="frame" x="20" y="807" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgK-u9-dNb" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPw-DQ-pgu">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                                 <state key="normal" title="이전"/>
                                                 <connections>
                                                     <action selector="btnBackAction:" destination="PMv-nh-aKS" eventType="touchUpInside" id="4vn-Gv-ni7"/>
@@ -585,10 +585,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGJ-HF-Qlw" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="183.5" y="0.0" width="190.5" height="45"/>
+                                        <rect key="frame" x="192" y="0.0" width="182" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNN-r7-ORU">
-                                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                                 <state key="normal" title="추가"/>
                                                 <connections>
                                                     <action selector="btnAddAction:" destination="PMv-nh-aKS" eventType="touchUpInside" id="5fv-9a-Rrx"/>
@@ -606,7 +606,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="hGJ-HF-Qlw" firstAttribute="width" secondItem="CgK-u9-dNb" secondAttribute="width" multiplier="1.1" id="cvg-Ly-2hN"/>
+                                    <constraint firstItem="hGJ-HF-Qlw" firstAttribute="width" secondItem="CgK-u9-dNb" secondAttribute="width" id="cvg-Ly-2hN"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SQLite db - PhoneBook 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBA-TM-a7U">
@@ -735,10 +735,10 @@
                                 <rect key="frame" x="20" y="807" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="594-kN-ndL" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htv-GN-sWU">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                                 <state key="normal" title="이전"/>
                                                 <connections>
                                                     <action selector="btnBackAction:" destination="NSc-AA-1iH" eventType="touchUpInside" id="bEj-Vc-1Ef"/>
@@ -755,10 +755,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3B9-Qa-SiI" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="183.5" y="0.0" width="190.5" height="45"/>
+                                        <rect key="frame" x="192" y="0.0" width="182" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpm-eB-AiH">
-                                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                                 <state key="normal" title="추가"/>
                                                 <connections>
                                                     <action selector="btnAddAction:" destination="NSc-AA-1iH" eventType="touchUpInside" id="eMk-mY-VmY"/>
@@ -776,7 +776,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="3B9-Qa-SiI" firstAttribute="width" secondItem="594-kN-ndL" secondAttribute="width" multiplier="1.1" id="OhW-W4-BMt"/>
+                                    <constraint firstItem="3B9-Qa-SiI" firstAttribute="width" secondItem="594-kN-ndL" secondAttribute="width" id="OhW-W4-BMt"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -820,10 +820,10 @@
                                 <rect key="frame" x="20" y="807" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1j-nc-baH" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2za-PU-Jut">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                                 <state key="normal" title="취소"/>
                                                 <connections>
                                                     <action selector="btnBackAction:" destination="ErX-I3-F6N" eventType="touchUpInside" id="155-W6-4o9"/>
@@ -840,10 +840,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-xT-wdO" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                        <rect key="frame" x="183.5" y="0.0" width="190.5" height="45"/>
+                                        <rect key="frame" x="192" y="0.0" width="182" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em0-wl-hRp">
-                                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="45"/>
                                                 <state key="normal" title="저장"/>
                                                 <connections>
                                                     <action selector="btnAddAction:" destination="ErX-I3-F6N" eventType="touchUpInside" id="MyC-0K-KQW"/>
@@ -861,7 +861,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="NKH-xT-wdO" firstAttribute="width" secondItem="R1j-nc-baH" secondAttribute="width" multiplier="1.1" id="G6D-1u-fuQ"/>
+                                    <constraint firstItem="NKH-xT-wdO" firstAttribute="width" secondItem="R1j-nc-baH" secondAttribute="width" id="G6D-1u-fuQ"/>
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-Yj-dQo">

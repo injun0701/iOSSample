@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-aA-nzf" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                <rect key="frame" x="144" y="130" width="125" height="45"/>
+                                <rect key="frame" x="151.5" y="130" width="121" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOB-3r-ijw">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="45"/>
                                         <state key="normal" title="Motion"/>
                                         <connections>
                                             <action selector="btnToMotionSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AE6-cI-Qsr"/>
@@ -38,10 +38,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beG-yR-DH0" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                <rect key="frame" x="279" y="130" width="125" height="45"/>
+                                <rect key="frame" x="282.5" y="130" width="121.5" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5a-5v-qfl">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="45"/>
                                         <state key="normal" title="Gesture"/>
                                         <connections>
                                             <action selector="btnToGestureSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82R-hJ-Jpf"/>
@@ -64,10 +64,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vG7-X3-3w4" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                <rect key="frame" x="20" y="130" width="114" height="45"/>
+                                <rect key="frame" x="20" y="130" width="121.5" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-oF-pum">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="45"/>
                                         <state key="normal" title="UI Object"/>
                                         <connections>
                                             <action selector="btnToUIObjectSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-7j-YyZ"/>
@@ -230,10 +230,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txS-Fs-vyU" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
-                                <rect key="frame" x="20" y="455" width="102" height="45"/>
+                                <rect key="frame" x="20" y="455" width="374" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvc-cn-GJF">
-                                        <rect key="frame" x="0.0" y="0.0" width="102" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                         <state key="normal" title="LocalDataSave"/>
                                         <connections>
                                             <action selector="btnToLocalDataSaveSampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ozz-6U-hcE"/>
@@ -247,6 +247,26 @@
                                     <constraint firstItem="rvc-cn-GJF" firstAttribute="leading" secondItem="txS-Fs-vyU" secondAttribute="leading" id="cUJ-yB-5Ul"/>
                                     <constraint firstAttribute="bottom" secondItem="rvc-cn-GJF" secondAttribute="bottom" id="evs-j9-Amb"/>
                                     <constraint firstAttribute="height" constant="45" id="nPY-qO-fug"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ug-vD-OEJ" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="520" width="374" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHh-oL-Pw4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <state key="normal" title=" AES256-CBC 암호화"/>
+                                        <connections>
+                                            <action selector="btnToAES256SampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mw9-ZC-HfP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="jHh-oL-Pw4" firstAttribute="leading" secondItem="5Ug-vD-OEJ" secondAttribute="leading" id="GlN-tP-ebL"/>
+                                    <constraint firstAttribute="trailing" secondItem="jHh-oL-Pw4" secondAttribute="trailing" id="Yea-S3-1N2"/>
+                                    <constraint firstAttribute="bottom" secondItem="jHh-oL-Pw4" secondAttribute="bottom" id="chY-Ir-mqH"/>
+                                    <constraint firstItem="jHh-oL-Pw4" firstAttribute="top" secondItem="5Ug-vD-OEJ" secondAttribute="top" id="uxp-fH-CP3"/>
+                                    <constraint firstAttribute="height" constant="45" id="xyS-zY-O5R"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -268,6 +288,7 @@
                             <constraint firstItem="cmu-aA-nzf" firstAttribute="centerY" secondItem="vG7-X3-3w4" secondAttribute="centerY" id="LAZ-mH-EXO"/>
                             <constraint firstItem="alB-6p-9b5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N6Z-tS-XpM"/>
                             <constraint firstItem="wYP-Wt-xXX" firstAttribute="leading" secondItem="LfP-cU-XLW" secondAttribute="trailing" constant="10" id="Nen-Sl-Apb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ug-vD-OEJ" secondAttribute="trailing" constant="20" id="OE1-sU-PCr"/>
                             <constraint firstItem="4sZ-6d-3Jl" firstAttribute="leading" secondItem="dPJ-qp-Nte" secondAttribute="trailing" constant="10" id="Pf2-L5-3lw"/>
                             <constraint firstItem="vG7-X3-3w4" firstAttribute="top" secondItem="Xd7-cr-vzG" secondAttribute="bottom" constant="20" id="Qkg-IC-tX9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="beG-yR-DH0" secondAttribute="trailing" constant="10" id="RfV-qD-dvy"/>
@@ -278,18 +299,21 @@
                             <constraint firstItem="dPJ-qp-Nte" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZxG-Yy-73r"/>
                             <constraint firstItem="pgz-fT-rk2" firstAttribute="centerY" secondItem="alB-6p-9b5" secondAttribute="centerY" id="bwr-d6-i3R"/>
                             <constraint firstItem="txS-Fs-vyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cew-aw-Yzi"/>
-                            <constraint firstItem="cmu-aA-nzf" firstAttribute="width" secondItem="vG7-X3-3w4" secondAttribute="width" multiplier="1.1" id="eqR-Nr-vGx"/>
+                            <constraint firstItem="cmu-aA-nzf" firstAttribute="width" secondItem="vG7-X3-3w4" secondAttribute="width" id="eqR-Nr-vGx"/>
                             <constraint firstItem="alB-6p-9b5" firstAttribute="width" secondItem="pgz-fT-rk2" secondAttribute="width" id="hhg-An-aKx"/>
                             <constraint firstItem="cmu-aA-nzf" firstAttribute="leading" secondItem="vG7-X3-3w4" secondAttribute="trailing" constant="10" id="i5z-rQ-xYh"/>
+                            <constraint firstItem="5Ug-vD-OEJ" firstAttribute="top" secondItem="txS-Fs-vyU" secondAttribute="bottom" constant="20" id="jQu-f3-V87"/>
                             <constraint firstItem="Xd7-cr-vzG" firstAttribute="top" secondItem="R4n-Fi-5ne" secondAttribute="bottom" constant="10" id="jam-1h-Tmt"/>
                             <constraint firstItem="R4n-Fi-5ne" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="k23-hq-b6O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wYP-Wt-xXX" secondAttribute="trailing" constant="20" id="mW2-eN-MO9"/>
                             <constraint firstItem="vG7-X3-3w4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nss-eF-lPp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="txS-Fs-vyU" secondAttribute="trailing" constant="20" id="qgX-ce-X70"/>
                             <constraint firstItem="beG-yR-DH0" firstAttribute="centerY" secondItem="vG7-X3-3w4" secondAttribute="centerY" id="qzA-EO-PWo"/>
-                            <constraint firstItem="beG-yR-DH0" firstAttribute="width" secondItem="vG7-X3-3w4" secondAttribute="width" multiplier="1.1" id="sB2-Wc-u4d"/>
+                            <constraint firstItem="beG-yR-DH0" firstAttribute="width" secondItem="vG7-X3-3w4" secondAttribute="width" id="sB2-Wc-u4d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R4n-Fi-5ne" secondAttribute="trailing" symbolic="YES" id="vE8-Rm-VjG"/>
                             <constraint firstItem="wYP-Wt-xXX" firstAttribute="centerY" secondItem="LfP-cU-XLW" secondAttribute="centerY" id="wlF-I9-VzE"/>
                             <constraint firstItem="4sZ-6d-3Jl" firstAttribute="width" secondItem="dPJ-qp-Nte" secondAttribute="width" id="z79-Sj-Kee"/>
+                            <constraint firstItem="5Ug-vD-OEJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ztr-hT-8dQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y9A-KO-6hj"/>
