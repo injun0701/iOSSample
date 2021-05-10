@@ -8,5 +8,6 @@ target 'iOSSample' do
   # Pods for iOSSample
 
 pod 'Alamofire'
+pod 'JGProgressHUD'
 
 end

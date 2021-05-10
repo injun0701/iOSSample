@@ -61,4 +61,8 @@ class AES256ViewController: UIViewController {
     @IBAction func btnLblEncrypedCopyAction(_ sender: UIButton) {
         UIPasteboard.general.string = lblEncryped.text
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
 }

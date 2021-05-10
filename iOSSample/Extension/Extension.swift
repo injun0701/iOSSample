@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 extension UIViewController {
     
@@ -58,7 +59,33 @@ extension UIViewController {
             print("Alert이 잘 작동됨")
         }
     }
-
+    
+  
+    
+    //위치 권한 체크
+    @objc func locationCheck(after: @escaping () -> ()) {
+        let status = CLLocationManager.authorizationStatus()
+        
+        if status == CLAuthorizationStatus.denied || status == CLAuthorizationStatus.restricted {
+            let alter = UIAlertController(title: "위치 권한 설정이 '허용 안 함'으로 되어있습니다.", message: "앱 설정 화면으로 가시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+            let logOkAction = UIAlertAction(title: "네", style: UIAlertAction.Style.default){
+                (action: UIAlertAction) in
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(NSURL(string:UIApplication.openSettingsURLString)! as URL)
+                } else {
+                    UIApplication.shared.openURL(NSURL(string: UIApplication.openSettingsURLString)! as URL)
+                }
+                after()
+            }
+            let logNoAction = UIAlertAction(title: "아니오", style: UIAlertAction.Style.destructive){
+                (action: UIAlertAction) in
+                after()
+            }
+            alter.addAction(logNoAction)
+            alter.addAction(logOkAction)
+            self.present(alter, animated: true, completion: nil)
+        }
+    }
 }
 
 //MARK: 네비게이션컨트롤러 extension

@@ -83,6 +83,18 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToLocationUseSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "LocationUse", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "LocationUseViewController") as! LocationUseViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToMapUseSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "MapUse", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "MapUseViewController") as! MapUseViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     var timer:Timer! = nil
     
     override func viewDidLoad() {

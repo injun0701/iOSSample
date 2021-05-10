@@ -69,5 +69,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>항상 위치 정보를 사용해야 합니다.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>앱이 실행 중인 동안 위치 정보를 사용합니다.</string>
 </dict>
 </plist>

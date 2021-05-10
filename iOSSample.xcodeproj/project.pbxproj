@@ -55,6 +55,9 @@
 		845B03E92647F4AF00062A3A /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B03E82647F4AF00062A3A /* AES.swift */; };
 		84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E62263698720094F9CE /* TableView2ViewController.swift */; };
 		84647E662636AC510094F9CE /* TableView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84647E652636AC510094F9CE /* TableView3ViewController.swift */; };
+		847BA99A2648F8D100D84CE6 /* MapUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BA9992648F8D100D84CE6 /* MapUseViewController.swift */; };
+		847BA99C2648F8DE00D84CE6 /* MapUse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847BA99B2648F8DE00D84CE6 /* MapUse.storyboard */; };
+		847BA99E26491EC700D84CE6 /* MapResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BA99D26491EC700D84CE6 /* MapResultListViewController.swift */; };
 		84855E052637DD39009C1D0B /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E042637DD39009C1D0B /* WebView.storyboard */; };
 		84855E082637DD49009C1D0B /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84855E072637DD49009C1D0B /* WebViewViewController.swift */; };
 		84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84855E0D26380786009C1D0B /* TableViewSample.storyboard */; };
@@ -71,9 +74,13 @@
 		84894541263A8E8A00F50111 /* RestApi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84894540263A8E8A00F50111 /* RestApi.storyboard */; };
 		84894543263A8E9C00F50111 /* RestApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84894542263A8E9C00F50111 /* RestApiViewController.swift */; };
 		84894545263A8F0800F50111 /* KakaoSearchApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84894544263A8F0800F50111 /* KakaoSearchApiViewController.swift */; };
+		84A20A2F2648BE78005DDCC3 /* LocationUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A20A2E2648BE78005DDCC3 /* LocationUseViewController.swift */; };
+		84A20A312648BE83005DDCC3 /* LocationUse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A20A302648BE83005DDCC3 /* LocationUse.storyboard */; };
 		84AFF164263AA03F0068FE4E /* PostSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF163263AA03F0068FE4E /* PostSampleViewController.swift */; };
 		84AFF166263AAA920068FE4E /* PostSampleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF165263AAA920068FE4E /* PostSampleResultViewController.swift */; };
 		84AFF16A263AB44E0068FE4E /* PostSampleResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF169263AB44E0068FE4E /* PostSampleResultCell.swift */; };
+		84BB7D3C26492D5A00FED24E /* MapResultRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB7D3B26492D5A00FED24E /* MapResultRouteViewController.swift */; };
+		84BB7D3E2649397F00FED24E /* LocationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB7D3D2649397F00FED24E /* LocationConfig.swift */; };
 		84D4C4F42639309F00457906 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4C4F32639309F00457906 /* Network.storyboard */; };
 		84D4C4F6263930E300457906 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4C4F5263930E300457906 /* NetworkViewController.swift */; };
 		84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4C4F72639323F00457906 /* WebImgDataViewController.swift */; };
@@ -151,6 +158,9 @@
 		845B03E82647F4AF00062A3A /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		84647E62263698720094F9CE /* TableView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView2ViewController.swift; sourceTree = "<group>"; };
 		84647E652636AC510094F9CE /* TableView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView3ViewController.swift; sourceTree = "<group>"; };
+		847BA9992648F8D100D84CE6 /* MapUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUseViewController.swift; sourceTree = "<group>"; };
+		847BA99B2648F8DE00D84CE6 /* MapUse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapUse.storyboard; sourceTree = "<group>"; };
+		847BA99D26491EC700D84CE6 /* MapResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapResultListViewController.swift; sourceTree = "<group>"; };
 		84855E042637DD39009C1D0B /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		84855E072637DD49009C1D0B /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		84855E0D26380786009C1D0B /* TableViewSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewSample.storyboard; sourceTree = "<group>"; };
@@ -167,9 +177,13 @@
 		84894540263A8E8A00F50111 /* RestApi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestApi.storyboard; sourceTree = "<group>"; };
 		84894542263A8E9C00F50111 /* RestApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiViewController.swift; sourceTree = "<group>"; };
 		84894544263A8F0800F50111 /* KakaoSearchApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSearchApiViewController.swift; sourceTree = "<group>"; };
+		84A20A2E2648BE78005DDCC3 /* LocationUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUseViewController.swift; sourceTree = "<group>"; };
+		84A20A302648BE83005DDCC3 /* LocationUse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationUse.storyboard; sourceTree = "<group>"; };
 		84AFF163263AA03F0068FE4E /* PostSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSampleViewController.swift; sourceTree = "<group>"; };
 		84AFF165263AAA920068FE4E /* PostSampleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSampleResultViewController.swift; sourceTree = "<group>"; };
 		84AFF169263AB44E0068FE4E /* PostSampleResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSampleResultCell.swift; sourceTree = "<group>"; };
+		84BB7D3B26492D5A00FED24E /* MapResultRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapResultRouteViewController.swift; sourceTree = "<group>"; };
+		84BB7D3D2649397F00FED24E /* LocationConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationConfig.swift; sourceTree = "<group>"; };
 		84D4C4F32639309F00457906 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		84D4C4F5263930E300457906 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		84D4C4F72639323F00457906 /* WebImgDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImgDataViewController.swift; sourceTree = "<group>"; };
@@ -296,6 +310,8 @@
 		8442A17B262FAF700077C18A /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				847BA9982648F8B700D84CE6 /* MapUse */,
+				84A20A2D2648BE23005DDCC3 /* LocationUse */,
 				845B03E32647F1AA00062A3A /* AES256 */,
 				8422FCD6263BE83500F688FD /* LocalDataSave */,
 				8489453F263A8E6F00F50111 /* RestApi */,
@@ -357,11 +373,22 @@
 		845B03E32647F1AA00062A3A /* AES256 */ = {
 			isa = PBXGroup;
 			children = (
-				845B03E82647F4AF00062A3A /* AES.swift */,
 				845B03E42647F1D900062A3A /* AES256.storyboard */,
 				845B03E62647F1E700062A3A /* AES256ViewController.swift */,
+				845B03E82647F4AF00062A3A /* AES.swift */,
 			);
 			path = AES256;
+			sourceTree = "<group>";
+		};
+		847BA9982648F8B700D84CE6 /* MapUse */ = {
+			isa = PBXGroup;
+			children = (
+				847BA99B2648F8DE00D84CE6 /* MapUse.storyboard */,
+				847BA9992648F8D100D84CE6 /* MapUseViewController.swift */,
+				847BA99D26491EC700D84CE6 /* MapResultListViewController.swift */,
+				84BB7D3B26492D5A00FED24E /* MapResultRouteViewController.swift */,
+			);
+			path = MapUse;
 			sourceTree = "<group>";
 		};
 		84855E032637DD1D009C1D0B /* WebView */ = {
@@ -418,9 +445,19 @@
 		84894546263A99FE00F50111 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				84BB7D3D2649397F00FED24E /* LocationConfig.swift */,
 				84F35215263906E100BA490C /* Reachability.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		84A20A2D2648BE23005DDCC3 /* LocationUse */ = {
+			isa = PBXGroup;
+			children = (
+				84A20A302648BE83005DDCC3 /* LocationUse.storyboard */,
+				84A20A2E2648BE78005DDCC3 /* LocationUseViewController.swift */,
+			);
+			path = LocationUse;
 			sourceTree = "<group>";
 		};
 		84D4C4F22639307700457906 /* Network */ = {
@@ -544,11 +581,13 @@
 				84F352122639063100BA490C /* SocketUse.storyboard in Resources */,
 				8442A189262FAF710077C18A /* LaunchScreen.storyboard in Resources */,
 				84894541263A8E8A00F50111 /* RestApi.storyboard in Resources */,
+				84A20A312648BE83005DDCC3 /* LocationUse.storyboard in Resources */,
 				84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */,
 				845B03E52647F1D900062A3A /* AES256.storyboard in Resources */,
 				84D4C4F42639309F00457906 /* Network.storyboard in Resources */,
 				8422FCD8263BE85500F688FD /* LocalDataSave.storyboard in Resources */,
 				8442A1A1262FCDD80077C18A /* UIObject.storyboard in Resources */,
+				847BA99C2648F8DE00D84CE6 /* MapUse.storyboard in Resources */,
 				84855E052637DD39009C1D0B /* WebView.storyboard in Resources */,
 				8442A186262FAF710077C18A /* Assets.xcassets in Resources */,
 				8442A193262FB4730077C18A /* Motion.storyboard in Resources */,
@@ -612,13 +651,16 @@
 				8442A181262FAF700077C18A /* ViewController.swift in Sources */,
 				84576F2B2632D3BD0004FF3D /* TableViewCell.swift in Sources */,
 				84855E112638079B009C1D0B /* TableViewSampleViewController.swift in Sources */,
+				847BA99E26491EC700D84CE6 /* MapResultListViewController.swift in Sources */,
 				84855E082637DD49009C1D0B /* WebViewViewController.swift in Sources */,
+				84BB7D3E2649397F00FED24E /* LocationConfig.swift in Sources */,
 				8422FCCF263B945400F688FD /* MovieListViewController.swift in Sources */,
 				84E59DF3263910B8000B87DD /* ytcpsocket.c in Sources */,
 				8442A17D262FAF700077C18A /* AppDelegate.swift in Sources */,
 				8422FCD5263BD00F00F688FD /* MovieListLinkViewController.swift in Sources */,
 				84E59DF5263910B8000B87DD /* Result.swift in Sources */,
 				84894543263A8E9C00F50111 /* RestApiViewController.swift in Sources */,
+				84BB7D3C26492D5A00FED24E /* MapResultRouteViewController.swift in Sources */,
 				8422FCD3263BA45300F688FD /* MovieVO.swift in Sources */,
 				8411FEDB263F9D3100527296 /* PhoneBookDAO.swift in Sources */,
 				8411FF04263FDBC300527296 /* ToDoViewController.swift in Sources */,
@@ -645,6 +687,7 @@
 				84AFF166263AAA920068FE4E /* PostSampleResultViewController.swift in Sources */,
 				84D4C4F82639323F00457906 /* WebImgDataViewController.swift in Sources */,
 				8411FED4263F884000527296 /* FMDatabasePool.m in Sources */,
+				847BA99A2648F8D100D84CE6 /* MapUseViewController.swift in Sources */,
 				84894536263A3B2A00F50111 /* JsonParsingViewController.swift in Sources */,
 				845B03E92647F4AF00062A3A /* AES.swift in Sources */,
 				8403B53D264100170085E736 /* LogViewController.swift in Sources */,
@@ -655,6 +698,7 @@
 				842F135A26312197008A172D /* ImgSwipeViewController.swift in Sources */,
 				8411FED3263F884000527296 /* FMDatabase.m in Sources */,
 				84647E63263698720094F9CE /* TableView2ViewController.swift in Sources */,
+				84A20A2F2648BE78005DDCC3 /* LocationUseViewController.swift in Sources */,
 				8489453A263A56C400F50111 /* ThreadDownloader.swift in Sources */,
 				84F352142639064600BA490C /* SocketUseViewController.swift in Sources */,
 				8422FCE0263C001F00F688FD /* DocumentFileSaveViewController.swift in Sources */,
