@@ -52,12 +52,6 @@ class ViewController: UIViewController {
         let navi = sb.instantiateViewController(withIdentifier: "CollectionView1ViewController") as! CollectionView1ViewController
         navigationController?.pushViewController(navi, animated: true)
     }
-    
-    @IBAction func btnToSocketUseSampleAction(_ sender: UIButton) {
-        let sb = UIStoryboard(name: "SocketUse", bundle: nil)
-        let navi = sb.instantiateViewController(withIdentifier: "SocketUseViewController") as! SocketUseViewController
-        navigationController?.pushViewController(navi, animated: true)
-    }
    
     @IBAction func btnToNetworkSampleAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Network", bundle: nil)
@@ -94,6 +88,13 @@ class ViewController: UIViewController {
         let navi = sb.instantiateViewController(withIdentifier: "MapUseViewController") as! MapUseViewController
         navigationController?.pushViewController(navi, animated: true)
     }
+    
+     @IBAction func btnToMultiMediaSampleAction(_ sender: UIButton) {
+         let sb = UIStoryboard(name: "MultiMedia", bundle: nil)
+         let navi = sb.instantiateViewController(withIdentifier: "MultiMediaViewController") as! MultiMediaViewController
+         navigationController?.pushViewController(navi, animated: true)
+     }
+     
     
     var timer:Timer! = nil
     

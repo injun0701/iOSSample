@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multi Media View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MultiMediaViewController" id="Y6W-OH-hqX" customClass="MultiMediaViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MultiMedia 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqL-OU-n2j">
+                                <rect key="frame" x="20" y="54" width="171.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mag-dp-XVS">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuP-Qb-KdH" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uO4-KL-36q">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rCT-dD-eXH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="uO4-KL-36q" secondAttribute="bottom" id="EgR-Dv-CVc"/>
+                                            <constraint firstAttribute="height" constant="45" id="I3x-fK-IWv"/>
+                                            <constraint firstItem="uO4-KL-36q" firstAttribute="leading" secondItem="EuP-Qb-KdH" secondAttribute="leading" id="Oyv-R7-tUu"/>
+                                            <constraint firstItem="uO4-KL-36q" firstAttribute="top" secondItem="EuP-Qb-KdH" secondAttribute="top" id="iTS-KC-I0N"/>
+                                            <constraint firstAttribute="trailing" secondItem="uO4-KL-36q" secondAttribute="trailing" id="su4-m0-Sif"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oCJ-hl-qnv">
+                                <rect key="frame" x="20" y="113" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTH-wy-SPy" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eI-1o-1k6">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="오디오 플레이어"/>
+                                                <connections>
+                                                    <action selector="btnToAudioPlayerSampleAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fBl-S0-0ZS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7eI-1o-1k6" secondAttribute="trailing" id="7jE-JD-MBi"/>
+                                            <constraint firstAttribute="height" constant="45" id="CaR-fm-2EF"/>
+                                            <constraint firstItem="7eI-1o-1k6" firstAttribute="top" secondItem="bTH-wy-SPy" secondAttribute="top" id="IaY-CQ-MH1"/>
+                                            <constraint firstItem="7eI-1o-1k6" firstAttribute="leading" secondItem="bTH-wy-SPy" secondAttribute="leading" id="LhG-9O-ueh"/>
+                                            <constraint firstAttribute="bottom" secondItem="7eI-1o-1k6" secondAttribute="bottom" id="Rzf-JT-6lH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HW9-Rq-Fd4">
+                                <rect key="frame" x="20" y="178" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-wE-eKi" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jih-QE-xe8">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="오디오 녹음"/>
+                                                <connections>
+                                                    <action selector="btnToAudioRecordSampleAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="07w-K1-bE7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Jih-QE-xe8" firstAttribute="leading" secondItem="lmL-wE-eKi" secondAttribute="leading" id="En0-kW-TqX"/>
+                                            <constraint firstAttribute="height" constant="45" id="Fwh-Qp-QoE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jih-QE-xe8" secondAttribute="bottom" id="IZG-Wt-6Ip"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jih-QE-xe8" secondAttribute="trailing" id="XER-BO-AvJ"/>
+                                            <constraint firstItem="Jih-QE-xe8" firstAttribute="top" secondItem="lmL-wE-eKi" secondAttribute="top" id="wot-k4-ldz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="39W-gE-7E8">
+                                <rect key="frame" x="20" y="243" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxs-vc-zaX" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVE-Jg-h8u">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="동영상 플레이어"/>
+                                                <connections>
+                                                    <action selector="btnVideoPlayAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cRD-fR-CLd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="lVE-Jg-h8u" firstAttribute="leading" secondItem="jxs-vc-zaX" secondAttribute="leading" id="FxK-l7-RSK"/>
+                                            <constraint firstItem="lVE-Jg-h8u" firstAttribute="top" secondItem="jxs-vc-zaX" secondAttribute="top" id="gEj-fV-XjA"/>
+                                            <constraint firstAttribute="height" constant="45" id="gL2-d4-KM5"/>
+                                            <constraint firstAttribute="trailing" secondItem="lVE-Jg-h8u" secondAttribute="trailing" id="gX8-5m-LNK"/>
+                                            <constraint firstAttribute="bottom" secondItem="lVE-Jg-h8u" secondAttribute="bottom" id="hgA-A3-hB0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oCJ-hl-qnv" firstAttribute="top" secondItem="VqL-OU-n2j" secondAttribute="bottom" constant="30" id="1R1-hl-TXV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mag-dp-XVS" secondAttribute="bottom" constant="10" id="2W8-Lc-eKI"/>
+                            <constraint firstItem="mag-dp-XVS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4G8-fe-VsN"/>
+                            <constraint firstItem="39W-gE-7E8" firstAttribute="top" secondItem="HW9-Rq-Fd4" secondAttribute="bottom" constant="20" id="6b4-lA-gKS"/>
+                            <constraint firstItem="HW9-Rq-Fd4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="8bx-Gb-lyL"/>
+                            <constraint firstItem="VqL-OU-n2j" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="E8U-pB-0ac"/>
+                            <constraint firstItem="39W-gE-7E8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Eff-5S-9Kr"/>
+                            <constraint firstItem="oCJ-hl-qnv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MiT-dz-tIK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oCJ-hl-qnv" secondAttribute="trailing" constant="20" id="NGV-Uy-VFC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="39W-gE-7E8" secondAttribute="trailing" constant="20" id="Oel-M8-bk8"/>
+                            <constraint firstItem="VqL-OU-n2j" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="R3v-hX-PYN"/>
+                            <constraint firstItem="HW9-Rq-Fd4" firstAttribute="top" secondItem="oCJ-hl-qnv" secondAttribute="bottom" constant="20" id="f60-p8-DTj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HW9-Rq-Fd4" secondAttribute="trailing" constant="20" id="vic-ft-VL1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mag-dp-XVS" secondAttribute="trailing" constant="20" id="wN9-AT-VcU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="48"/>
+        </scene>
+        <!--Audio Player View Controller-->
+        <scene sceneID="MzY-Ng-due">
+            <objects>
+                <viewController storyboardIdentifier="AudioPlayerViewController" id="7MR-Al-OPQ" customClass="AudioPlayerViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SbW-Ez-UCI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오디오 플레이어 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCA-mY-2Ys">
+                                <rect key="frame" x="20" y="54" width="197" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BNW-zL-Iaq">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-Fs-ngr" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izf-ne-Nq4">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="7MR-Al-OPQ" eventType="touchUpInside" id="mjc-2Q-x33"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="izf-ne-Nq4" secondAttribute="trailing" id="BXK-PB-S9m"/>
+                                            <constraint firstItem="izf-ne-Nq4" firstAttribute="top" secondItem="QUy-Fs-ngr" secondAttribute="top" id="F8d-ab-wEH"/>
+                                            <constraint firstAttribute="bottom" secondItem="izf-ne-Nq4" secondAttribute="bottom" id="X28-Ts-6Lk"/>
+                                            <constraint firstAttribute="height" constant="45" id="bpE-iM-3ZE"/>
+                                            <constraint firstItem="izf-ne-Nq4" firstAttribute="leading" secondItem="QUy-Fs-ngr" secondAttribute="leading" id="n2B-gn-tcN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t9s-GV-fd2">
+                                <rect key="frame" x="20" y="423" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8W-Yc-6W3" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G18-R6-Y1v">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="음악 재생 시작"/>
+                                                <connections>
+                                                    <action selector="btnPlayAction:" destination="7MR-Al-OPQ" eventType="touchUpInside" id="8u6-Zu-cnn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="G18-R6-Y1v" secondAttribute="bottom" id="FyT-qY-VRs"/>
+                                            <constraint firstAttribute="trailing" secondItem="G18-R6-Y1v" secondAttribute="trailing" id="Iug-mV-byY"/>
+                                            <constraint firstItem="G18-R6-Y1v" firstAttribute="leading" secondItem="E8W-Yc-6W3" secondAttribute="leading" id="MsC-Mt-Byd"/>
+                                            <constraint firstItem="G18-R6-Y1v" firstAttribute="top" secondItem="E8W-Yc-6W3" secondAttribute="top" id="T78-ms-aqm"/>
+                                            <constraint firstAttribute="height" constant="45" id="e6c-tI-ydN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inceptionimg" translatesAutoresizingMaskIntoConstraints="NO" id="7fJ-9T-jV2">
+                                <rect key="frame" x="60" y="143" width="294" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="x7g-5f-yw8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="볼륨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0s-DX-JBG">
+                                <rect key="frame" x="20" y="498" width="24.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zmv-2e-LtY">
+                                <rect key="frame" x="18" y="525" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderChangeVolum:" destination="7MR-Al-OPQ" eventType="valueChanged" id="gyX-yF-jYL"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UNy-7d-8pg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YCA-mY-2Ys" firstAttribute="leading" secondItem="UNy-7d-8pg" secondAttribute="leading" constant="20" id="A9z-g0-d5m"/>
+                            <constraint firstItem="UNy-7d-8pg" firstAttribute="trailing" secondItem="7fJ-9T-jV2" secondAttribute="trailing" constant="60" id="ADK-Qq-83j"/>
+                            <constraint firstItem="UNy-7d-8pg" firstAttribute="trailing" secondItem="BNW-zL-Iaq" secondAttribute="trailing" constant="20" id="CBI-aO-MA5"/>
+                            <constraint firstItem="7fJ-9T-jV2" firstAttribute="leading" secondItem="UNy-7d-8pg" secondAttribute="leading" constant="60" id="Co2-hy-Mzz"/>
+                            <constraint firstItem="YCA-mY-2Ys" firstAttribute="top" secondItem="UNy-7d-8pg" secondAttribute="top" constant="10" id="DSE-6R-cng"/>
+                            <constraint firstItem="t9s-GV-fd2" firstAttribute="leading" secondItem="UNy-7d-8pg" secondAttribute="leading" constant="20" id="HPx-St-Jar"/>
+                            <constraint firstItem="t9s-GV-fd2" firstAttribute="top" secondItem="7fJ-9T-jV2" secondAttribute="bottom" constant="30" id="KVo-KY-6ha"/>
+                            <constraint firstItem="zmv-2e-LtY" firstAttribute="top" secondItem="W0s-DX-JBG" secondAttribute="bottom" constant="10" id="OZM-wT-0S1"/>
+                            <constraint firstItem="UNy-7d-8pg" firstAttribute="trailing" secondItem="zmv-2e-LtY" secondAttribute="trailing" constant="20" id="R3T-ei-h6t"/>
+                            <constraint firstItem="zmv-2e-LtY" firstAttribute="leading" secondItem="UNy-7d-8pg" secondAttribute="leading" constant="20" id="Thk-7d-FLJ"/>
+                            <constraint firstItem="UNy-7d-8pg" firstAttribute="bottom" secondItem="BNW-zL-Iaq" secondAttribute="bottom" constant="10" id="Ubh-EL-eoT"/>
+                            <constraint firstItem="7fJ-9T-jV2" firstAttribute="top" secondItem="YCA-mY-2Ys" secondAttribute="bottom" constant="60" id="bgB-zc-LBH"/>
+                            <constraint firstItem="UNy-7d-8pg" firstAttribute="trailing" secondItem="t9s-GV-fd2" secondAttribute="trailing" constant="20" id="dG2-uN-3Zf"/>
+                            <constraint firstItem="W0s-DX-JBG" firstAttribute="leading" secondItem="UNy-7d-8pg" secondAttribute="leading" constant="20" id="jCf-pb-fsx"/>
+                            <constraint firstItem="W0s-DX-JBG" firstAttribute="top" secondItem="t9s-GV-fd2" secondAttribute="bottom" constant="30" id="l1a-BR-Bhp"/>
+                            <constraint firstItem="BNW-zL-Iaq" firstAttribute="leading" secondItem="UNy-7d-8pg" secondAttribute="leading" constant="20" id="qtp-kS-ZjS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veJ-DU-iuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.75362318840587" y="47.544642857142854"/>
+        </scene>
+        <!--Audio Record View Controller-->
+        <scene sceneID="hc8-FI-0Cl">
+            <objects>
+                <viewController storyboardIdentifier="AudioRecordViewController" id="zcz-U9-chm" customClass="AudioRecordViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UZ2-5m-pMC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오디오 녹음 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT3-QZ-JKx">
+                                <rect key="frame" x="20" y="54" width="155.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-M7-7Zc">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nU2-TU-4nD" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7P-1C-Rnz">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="zcz-U9-chm" eventType="touchUpInside" id="vRE-HP-KNn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="L7P-1C-Rnz" firstAttribute="top" secondItem="nU2-TU-4nD" secondAttribute="top" id="atp-Gl-LUe"/>
+                                            <constraint firstItem="L7P-1C-Rnz" firstAttribute="leading" secondItem="nU2-TU-4nD" secondAttribute="leading" id="fRV-Uk-fHH"/>
+                                            <constraint firstAttribute="bottom" secondItem="L7P-1C-Rnz" secondAttribute="bottom" id="meR-eS-83h"/>
+                                            <constraint firstAttribute="height" constant="45" id="olG-O9-Bap"/>
+                                            <constraint firstAttribute="trailing" secondItem="L7P-1C-Rnz" secondAttribute="trailing" id="uYQ-3k-qkB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Byf-r5-Lyp">
+                                <rect key="frame" x="20" y="178" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTe-fv-to6" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-Qp-PIQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="음원 재생 시작"/>
+                                                <connections>
+                                                    <action selector="btnPlayAction:" destination="zcz-U9-chm" eventType="touchUpInside" id="0XS-EM-7hQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Vts-Qp-PIQ" firstAttribute="leading" secondItem="hTe-fv-to6" secondAttribute="leading" id="94d-pl-ltA"/>
+                                            <constraint firstAttribute="height" constant="45" id="NdJ-ZW-UZs"/>
+                                            <constraint firstItem="Vts-Qp-PIQ" firstAttribute="top" secondItem="hTe-fv-to6" secondAttribute="top" id="Tbp-U1-DPb"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vts-Qp-PIQ" secondAttribute="bottom" id="pfc-Ui-Hk7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vts-Qp-PIQ" secondAttribute="trailing" id="stv-fY-bs0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="볼륨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obz-DD-2On">
+                                <rect key="frame" x="20" y="253" width="24.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="peO-0l-Sb9">
+                                <rect key="frame" x="18" y="280" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderChangeVolum:" destination="zcz-U9-chm" eventType="valueChanged" id="sb1-yM-saI"/>
+                                </connections>
+                            </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NmR-zm-dRP">
+                                <rect key="frame" x="20" y="113" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVY-gE-ebs" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFn-9p-2hr">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="음원 녹음 시작"/>
+                                                <connections>
+                                                    <action selector="btnRecordAction:" destination="zcz-U9-chm" eventType="touchUpInside" id="DbM-Yb-2NY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="0CZ-2j-H6d"/>
+                                            <constraint firstItem="MFn-9p-2hr" firstAttribute="leading" secondItem="UVY-gE-ebs" secondAttribute="leading" id="8EK-S3-mWQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="MFn-9p-2hr" secondAttribute="bottom" id="CDA-Nh-MYb"/>
+                                            <constraint firstAttribute="trailing" secondItem="MFn-9p-2hr" secondAttribute="trailing" id="d5S-qB-Tos"/>
+                                            <constraint firstItem="MFn-9p-2hr" firstAttribute="top" secondItem="UVY-gE-ebs" secondAttribute="top" id="wuJ-z1-hge"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pcZ-jN-onl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pcZ-jN-onl" firstAttribute="bottom" secondItem="Nym-M7-7Zc" secondAttribute="bottom" constant="10" id="4Ti-Pk-hSN"/>
+                            <constraint firstItem="jT3-QZ-JKx" firstAttribute="top" secondItem="pcZ-jN-onl" secondAttribute="top" constant="10" id="98D-P0-HUo"/>
+                            <constraint firstItem="Byf-r5-Lyp" firstAttribute="leading" secondItem="pcZ-jN-onl" secondAttribute="leading" constant="20" id="9ya-zG-GQN"/>
+                            <constraint firstItem="jT3-QZ-JKx" firstAttribute="leading" secondItem="pcZ-jN-onl" secondAttribute="leading" constant="20" id="Eku-3x-ZUV"/>
+                            <constraint firstItem="Byf-r5-Lyp" firstAttribute="top" secondItem="NmR-zm-dRP" secondAttribute="bottom" constant="20" id="H67-J3-hIP"/>
+                            <constraint firstItem="pcZ-jN-onl" firstAttribute="trailing" secondItem="Byf-r5-Lyp" secondAttribute="trailing" constant="20" id="HMG-iZ-6t9"/>
+                            <constraint firstItem="Nym-M7-7Zc" firstAttribute="leading" secondItem="pcZ-jN-onl" secondAttribute="leading" constant="20" id="Kdw-Mz-G9V"/>
+                            <constraint firstItem="pcZ-jN-onl" firstAttribute="trailing" secondItem="Nym-M7-7Zc" secondAttribute="trailing" constant="20" id="NU3-jm-vVW"/>
+                            <constraint firstItem="NmR-zm-dRP" firstAttribute="top" secondItem="jT3-QZ-JKx" secondAttribute="bottom" constant="30" id="Ok3-5V-SZk"/>
+                            <constraint firstItem="Obz-DD-2On" firstAttribute="leading" secondItem="pcZ-jN-onl" secondAttribute="leading" constant="20" id="YmE-f9-Uct"/>
+                            <constraint firstItem="pcZ-jN-onl" firstAttribute="trailing" secondItem="NmR-zm-dRP" secondAttribute="trailing" constant="20" id="mXh-n0-FiE"/>
+                            <constraint firstItem="pcZ-jN-onl" firstAttribute="trailing" secondItem="peO-0l-Sb9" secondAttribute="trailing" constant="20" id="rRj-xI-wWJ"/>
+                            <constraint firstItem="NmR-zm-dRP" firstAttribute="leading" secondItem="pcZ-jN-onl" secondAttribute="leading" constant="20" id="s3f-kv-IJV"/>
+                            <constraint firstItem="peO-0l-Sb9" firstAttribute="top" secondItem="Obz-DD-2On" secondAttribute="bottom" constant="10" id="sq7-rX-U0J"/>
+                            <constraint firstItem="peO-0l-Sb9" firstAttribute="leading" secondItem="pcZ-jN-onl" secondAttribute="leading" constant="20" id="tnB-FQ-kMf"/>
+                            <constraint firstItem="Obz-DD-2On" firstAttribute="top" secondItem="Byf-r5-Lyp" secondAttribute="bottom" constant="30" id="zEf-xT-hbt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="Vts-Qp-PIQ" id="zy6-uO-NaW"/>
+                        <outlet property="btnRecord" destination="MFn-9p-2hr" id="0Yq-4H-vua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXw-i2-4bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inceptionimg" width="600" height="860.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

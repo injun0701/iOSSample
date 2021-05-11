@@ -63,14 +63,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcY-x8-bdy">
-                                <rect key="frame" x="85" y="757" width="45" height="30"/>
+                                <rect key="frame" x="85" y="757" width="60" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="3fr-Ep-WJV"/>
+                                    <constraint firstAttribute="width" constant="60" id="3fr-Ep-WJV"/>
                                     <constraint firstAttribute="height" constant="30" id="uKz-og-Nnb"/>
                                 </constraints>
-                                <state key="normal" title="zoom"/>
+                                <state key="normal" title="zoom in"/>
                                 <connections>
-                                    <action selector="btnZoomAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zxY-hh-n8v"/>
+                                    <action selector="btnZoomInAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zxY-hh-n8v"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="음식점이나 카페를 검색하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMH-zr-pjX">
@@ -86,6 +86,16 @@
                                 <state key="normal" title="검색 결과로 길찾기"/>
                                 <connections>
                                     <action selector="btnToSearchResultAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e5r-ah-dLi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-kK-o9l">
+                                <rect key="frame" x="165" y="757" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FiK-64-fIL"/>
+                                </constraints>
+                                <state key="normal" title="zoom out"/>
+                                <connections>
+                                    <action selector="btnZoomOutAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9xV-DW-RY7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,9 +117,11 @@
                             <constraint firstItem="vMH-zr-pjX" firstAttribute="top" secondItem="nV6-8f-lxE" secondAttribute="bottom" constant="30" id="WPx-NI-5uh"/>
                             <constraint firstItem="w5e-13-JqH" firstAttribute="top" secondItem="7W8-Ao-hdu" secondAttribute="bottom" constant="20" id="bfq-Hf-tlq"/>
                             <constraint firstItem="nV6-8f-lxE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="hAQ-Jy-v5b"/>
+                            <constraint firstItem="5Ia-kK-o9l" firstAttribute="leading" secondItem="wcY-x8-bdy" secondAttribute="trailing" constant="20" id="ikd-vz-ThG"/>
                             <constraint firstItem="nV6-8f-lxE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mLA-jz-ACV"/>
                             <constraint firstItem="fgU-nQ-p9B" firstAttribute="top" secondItem="vMH-zr-pjX" secondAttribute="bottom" constant="10" id="nl0-nM-xQp"/>
                             <constraint firstItem="7W8-Ao-hdu" firstAttribute="top" secondItem="fgU-nQ-p9B" secondAttribute="bottom" constant="20" id="rgf-CO-Hrw"/>
+                            <constraint firstItem="5Ia-kK-o9l" firstAttribute="centerY" secondItem="wcY-x8-bdy" secondAttribute="centerY" id="uno-py-PSx"/>
                         </constraints>
                     </view>
                     <connections>

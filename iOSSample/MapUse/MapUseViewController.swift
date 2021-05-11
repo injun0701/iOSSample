@@ -17,6 +17,9 @@ class MapUseViewController: UIViewController {
     //위치 정보 사용을 위한 객체
     var locationManager: CLLocationManager?
     
+    //지도 영역 기본값 - 현재 위치를 기준으로 반경 30km
+    var latitudinalAndLongitudinalMeters = 3000.0
+    
     //검색 결과를 저장할 프로퍼티 생성
     var matchingItems = [MKMapItem]()
     
@@ -84,10 +87,19 @@ class MapUseViewController: UIViewController {
         }
     }
     
-    //맵 줌 버튼
-    @IBAction func btnZoomAction(_ sender: UIButton) {
-        //현재 위치를 기준으로 반경 3km
-        mapZoom(latitudinalMeters: 3000, longitudinalMeters: 3000)
+    //맵 줌 인 버튼
+    @IBAction func btnZoomInAction(_ sender: UIButton) {
+        //누를때 마다 2배 확대
+        latitudinalAndLongitudinalMeters = latitudinalAndLongitudinalMeters / 2
+        
+        mapZoom(latitudinalMeters: latitudinalAndLongitudinalMeters, longitudinalMeters: latitudinalAndLongitudinalMeters)
+    }
+    
+    @IBAction func btnZoomOutAction(_ sender: UIButton) {
+        //누를때 마다 2배 확대
+        latitudinalAndLongitudinalMeters = latitudinalAndLongitudinalMeters * 2
+        
+        mapZoom(latitudinalMeters: latitudinalAndLongitudinalMeters, longitudinalMeters: latitudinalAndLongitudinalMeters)
     }
     
     //검색 결과 리스트 화면으로 이동하는 버튼
@@ -126,7 +138,7 @@ class MapUseViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         //현재 위치를 기준으로 반경 30km
-        mapZoom(latitudinalMeters: 30000, longitudinalMeters: 30000)
+        mapZoom(latitudinalMeters: latitudinalAndLongitudinalMeters, longitudinalMeters: latitudinalAndLongitudinalMeters)
     }
     
     func mapZoom(latitudinalMeters: Double, longitudinalMeters: Double) {

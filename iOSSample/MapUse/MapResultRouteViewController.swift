@@ -37,54 +37,20 @@ class MapResultRouteViewController: UIViewController {
     func setting() {
         //로딩 시작
         hud.show(in: self.view)
-        
+        //맵뷰에 이벤트 발생시 현재 클래스의 인스턴스가 처리
         mapView.delegate = self
+        //맴뷰가 현재 위치 사용 설정
         mapView.showsUserLocation = true
         
+        //위치 정보 최고 정확도 설정
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //위치 정보에 이벤트 발생 시 현재 클래스의 인스턴스가 처리
         locationManager.delegate = self
+        //위치 정보를 사용하는 시점을 설정
         locationManager.requestLocation()
         
     }
     
-    func showRoute(_ response: MKDirections.Response) {
-        for route in response.routes {
-            mapView.addOverlay(route.polyline, level: MKOverlayLevel.aboveRoads)
-            for step in route.steps {
-                print(step.instructions)
-                
-            }
-            
-        }
-        if let coordinate = userLocation?.coordinate {
-            let region = MKCoordinateRegion(center:coordinate, latitudinalMeters:2000, longitudinalMeters:2000)
-            mapView.setRegion(region, animated: true)
-        }
-    }
-    
-    func getDirections() {
-        let request = MKDirections.Request()
-        request.source = MKMapItem.forCurrentLocation()
-        
-        if let destination = destination {
-            request.destination = destination
-        }
-        request.requestsAlternateRoutes = false
-        let directions = MKDirections(request: request)
-        directions.calculate(completionHandler: {(response, error) in
-            if let error = error {
-                print(error.localizedDescription)
-                //로딩 중지
-                self.hud.dismiss(afterDelay: 0.4)
-            } else {
-                if let response = response {
-                    self.showRoute(response)
-                    //로딩 중지
-                    self.hud.dismiss(afterDelay: 0.4)
-                }
-            }
-        })
-    }
 }
 
 extension MapResultRouteViewController: MKMapViewDelegate {
@@ -115,5 +81,53 @@ extension MapResultRouteViewController: CLLocationManagerDelegate {
     //위치 정보를 가져오는데 실패했을 때 호출되는 메소드
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         NSLog(error.localizedDescription)
+    }
+    
+    //경로 결과 받아오기 사용자 정의 메소드
+    func getDirections() {
+        //출발지 정보 설정
+        let request = MKDirections.Request()
+        request.source = MKMapItem.forCurrentLocation()
+        //목적지 정보 설정
+        if let destination = destination {
+            request.destination = destination
+        }
+        //방대평 방향은 사용하지 않음
+        request.requestsAlternateRoutes = false
+        //요청
+        let directions = MKDirections(request: request)
+        //요청 결과 사용
+        directions.calculate(completionHandler: {(response, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                //로딩 중지
+                self.hud.dismiss(afterDelay: 0.4)
+            } else {
+                if let response = response {
+                    //경로 설정 사용자 정의 메소드
+                    self.showRoute(response)
+                    //로딩 중지
+                    self.hud.dismiss(afterDelay: 0.4)
+                }
+            }
+        })
+    }
+    
+    //경로 설정 사용자 정의 메소드
+    func showRoute(_ response: MKDirections.Response) {
+        //해당 경로를 받아서 순서대로
+        for route in response.routes {
+            //맵뷰 위에 선을 그리라고 요청
+            mapView.addOverlay(route.polyline, level: MKOverlayLevel.aboveRoads)
+            //동선을 문자열로 출력
+            for step in route.steps {
+                print(step.instructions)
+            }
+        }
+        //맵뷰의 출력 영역을 변경
+        if let coordinate = userLocation?.coordinate {
+            let region = MKCoordinateRegion(center:coordinate, latitudinalMeters:2000, longitudinalMeters:2000)
+            mapView.setRegion(region, animated: true)
+        }
     }
 }

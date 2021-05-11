@@ -27,6 +27,9 @@
 		8422FCDC263BEABE00F688FD /* AppDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422FCDB263BEABE00F688FD /* AppDelegateViewController.swift */; };
 		8422FCDE263BEAE800F688FD /* AppDelegateInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422FCDD263BEAE800F688FD /* AppDelegateInputViewController.swift */; };
 		8422FCE0263C001F00F688FD /* DocumentFileSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422FCDF263C001F00F688FD /* DocumentFileSaveViewController.swift */; };
+		84297D0F264A33B60085ABB0 /* MultiMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84297D0E264A33B60085ABB0 /* MultiMediaViewController.swift */; };
+		84297D11264A33D40085ABB0 /* MultiMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84297D10264A33D40085ABB0 /* MultiMedia.storyboard */; };
+		84297D13264A387A0085ABB0 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84297D12264A387A0085ABB0 /* AudioPlayerViewController.swift */; };
 		842F134926310407008A172D /* Gesture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F134826310407008A172D /* Gesture.storyboard */; };
 		842F134C26310416008A172D /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F134B26310416008A172D /* GestureViewController.swift */; };
 		842F1350263112B7008A172D /* ScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F134F263112B7008A172D /* ScrollViewViewController.swift */; };
@@ -92,6 +95,9 @@
 		84E59DF3263910B8000B87DD /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DEC263910B8000B87DD /* ytcpsocket.c */; };
 		84E59DF4263910B8000B87DD /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DED263910B8000B87DD /* yudpsocket.c */; };
 		84E59DF5263910B8000B87DD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E59DEF263910B8000B87DD /* Result.swift */; };
+		84EF3551264A476300105A96 /* inception.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84EF3550264A476300105A96 /* inception.mp3 */; };
+		84EF3553264A54CD00105A96 /* AudioRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3552264A54CD00105A96 /* AudioRecordViewController.swift */; };
+		84EF3557264A748900105A96 /* ipadVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84EF3556264A72A300105A96 /* ipadVideo.mp4 */; };
 		84F3520F2638F52300BA490C /* CollectionheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3520E2638F52300BA490C /* CollectionheaderView.swift */; };
 		84F352122639063100BA490C /* SocketUse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F352112639063100BA490C /* SocketUse.storyboard */; };
 		84F352142639064600BA490C /* SocketUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F352132639064600BA490C /* SocketUseViewController.swift */; };
@@ -128,6 +134,9 @@
 		8422FCDB263BEABE00F688FD /* AppDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateViewController.swift; sourceTree = "<group>"; };
 		8422FCDD263BEAE800F688FD /* AppDelegateInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateInputViewController.swift; sourceTree = "<group>"; };
 		8422FCDF263C001F00F688FD /* DocumentFileSaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFileSaveViewController.swift; sourceTree = "<group>"; };
+		84297D0E264A33B60085ABB0 /* MultiMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiMediaViewController.swift; sourceTree = "<group>"; };
+		84297D10264A33D40085ABB0 /* MultiMedia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiMedia.storyboard; sourceTree = "<group>"; };
+		84297D12264A387A0085ABB0 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
 		842F134826310407008A172D /* Gesture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gesture.storyboard; sourceTree = "<group>"; };
 		842F134B26310416008A172D /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		842F134F263112B7008A172D /* ScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +206,9 @@
 		84E59DED263910B8000B87DD /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
 		84E59DEE263910B8000B87DD /* SwiftSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftSocket.h; sourceTree = "<group>"; };
 		84E59DEF263910B8000B87DD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		84EF3550264A476300105A96 /* inception.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inception.mp3; sourceTree = "<group>"; };
+		84EF3552264A54CD00105A96 /* AudioRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordViewController.swift; sourceTree = "<group>"; };
+		84EF3556264A72A300105A96 /* ipadVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ipadVideo.mp4; sourceTree = "<group>"; };
 		84F3520E2638F52300BA490C /* CollectionheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionheaderView.swift; sourceTree = "<group>"; };
 		84F352112639063100BA490C /* SocketUse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SocketUse.storyboard; sourceTree = "<group>"; };
 		84F352132639064600BA490C /* SocketUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUseViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +281,19 @@
 			path = LocalDataSave;
 			sourceTree = "<group>";
 		};
+		84297D0D264A339F0085ABB0 /* MultiMedia */ = {
+			isa = PBXGroup;
+			children = (
+				84297D10264A33D40085ABB0 /* MultiMedia.storyboard */,
+				84297D0E264A33B60085ABB0 /* MultiMediaViewController.swift */,
+				84297D12264A387A0085ABB0 /* AudioPlayerViewController.swift */,
+				84EF3552264A54CD00105A96 /* AudioRecordViewController.swift */,
+				84EF3556264A72A300105A96 /* ipadVideo.mp4 */,
+				84EF3550264A476300105A96 /* inception.mp3 */,
+			);
+			path = MultiMedia;
+			sourceTree = "<group>";
+		};
 		842F1347263103E9008A172D /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,16 +335,15 @@
 		8442A17B262FAF700077C18A /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				84297D0D264A339F0085ABB0 /* MultiMedia */,
 				847BA9982648F8B700D84CE6 /* MapUse */,
 				84A20A2D2648BE23005DDCC3 /* LocationUse */,
 				845B03E32647F1AA00062A3A /* AES256 */,
 				8422FCD6263BE83500F688FD /* LocalDataSave */,
 				8489453F263A8E6F00F50111 /* RestApi */,
 				84D4C4F22639307700457906 /* Network */,
-				84F352102639060C00BA490C /* SocketUse */,
 				84855E0B26380747009C1D0B /* CollectionView */,
 				84855E0A2638073A009C1D0B /* TableView */,
-				84855E032637DD1D009C1D0B /* WebView */,
 				842F134E2631129B008A172D /* ScrollView */,
 				842F1347263103E9008A172D /* Gesture */,
 				8442A19E262FCDB40077C18A /* UIObject */,
@@ -463,6 +487,8 @@
 		84D4C4F22639307700457906 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				84855E032637DD1D009C1D0B /* WebView */,
+				84F352102639060C00BA490C /* SocketUse */,
 				84D4C4F32639309F00457906 /* Network.storyboard */,
 				84D4C4F5263930E300457906 /* NetworkViewController.swift */,
 				84D4C4F72639323F00457906 /* WebImgDataViewController.swift */,
@@ -585,7 +611,9 @@
 				84855E0E26380786009C1D0B /* TableViewSample.storyboard in Resources */,
 				845B03E52647F1D900062A3A /* AES256.storyboard in Resources */,
 				84D4C4F42639309F00457906 /* Network.storyboard in Resources */,
+				84297D11264A33D40085ABB0 /* MultiMedia.storyboard in Resources */,
 				8422FCD8263BE85500F688FD /* LocalDataSave.storyboard in Resources */,
+				84EF3557264A748900105A96 /* ipadVideo.mp4 in Resources */,
 				8442A1A1262FCDD80077C18A /* UIObject.storyboard in Resources */,
 				847BA99C2648F8DE00D84CE6 /* MapUse.storyboard in Resources */,
 				84855E052637DD39009C1D0B /* WebView.storyboard in Resources */,
@@ -595,6 +623,7 @@
 				84855E18263809CE009C1D0B /* CollectionViewSample.storyboard in Resources */,
 				842F1353263112CB008A172D /* ScrollView.storyboard in Resources */,
 				8442A184262FAF700077C18A /* Main.storyboard in Resources */,
+				84EF3551264A476300105A96 /* inception.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +730,8 @@
 				84A20A2F2648BE78005DDCC3 /* LocationUseViewController.swift in Sources */,
 				8489453A263A56C400F50111 /* ThreadDownloader.swift in Sources */,
 				84F352142639064600BA490C /* SocketUseViewController.swift in Sources */,
+				84297D13264A387A0085ABB0 /* AudioPlayerViewController.swift in Sources */,
+				84EF3553264A54CD00105A96 /* AudioRecordViewController.swift in Sources */,
 				8422FCE0263C001F00F688FD /* DocumentFileSaveViewController.swift in Sources */,
 				8442A17F262FAF700077C18A /* SceneDelegate.swift in Sources */,
 				8411FED5263F884000527296 /* FMDatabaseQueue.m in Sources */,
@@ -714,6 +745,7 @@
 				8422FCDA263BE86700F688FD /* LocalDataSaveViewController.swift in Sources */,
 				8411FED6263F884000527296 /* FMResultSet.m in Sources */,
 				8411FEC3263F836600527296 /* PhoneBookViewController.swift in Sources */,
+				84297D0F264A33B60085ABB0 /* MultiMediaViewController.swift in Sources */,
 				84D4C4FC2639502E00457906 /* BookList.swift in Sources */,
 				8442A1C1263018E40077C18A /* ImgViewViewController.swift in Sources */,
 				8411FF06263FE85600527296 /* ToDoInputViewController.swift in Sources */,
@@ -795,7 +827,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -850,7 +882,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -880,7 +912,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/iOSSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -903,7 +935,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSSample/iOSSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

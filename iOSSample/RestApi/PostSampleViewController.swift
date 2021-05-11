@@ -126,7 +126,7 @@ class PostSampleViewController: UIViewController {
         }
     }
     
-    //업로드 함수
+    //업로드 메소드
     func insert() {
         //이미지 데이터가 nil이 아니면
         if let imageData = imageDataCheck() {
@@ -210,15 +210,18 @@ class PostSampleViewController: UIViewController {
 }
 
 extension PostSampleViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+    //이미지 선택했을때
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //이미지뷰를 선택된 이미지로 교체
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            let imageDataName = "\(info[UIImagePickerController.InfoKey.imageURL] ?? "gray.jpg")"
-            //문자열 끝에서 10글자 추출
-            let imageDataNameStr = "\(imageDataName.suffix(10))"
-            imageName = "\(imageDataNameStr)"
-            print(imageName)
             imgView.image = image
+        }
+        //선택된 이미지의 이름과 확장자 받아오기
+        if let url = info[UIImagePickerController.InfoKey.imageURL] as? URL {
+            imageName = url.lastPathComponent
+            imageDataFileExtension = url.pathExtension
+            print(imageName)
+            print(imageDataFileExtension)
         }
         dismiss(animated: true, completion: nil)
     }

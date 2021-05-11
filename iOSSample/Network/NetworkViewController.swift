@@ -39,6 +39,18 @@ class NetworkViewController: UIViewController {
         navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func btnToSocketUseSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "SocketUse", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "SocketUseViewController") as! SocketUseViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    @IBAction func btnToWebViewSampleAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "WebView", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     @IBAction func btnBackAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

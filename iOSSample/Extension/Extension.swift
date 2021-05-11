@@ -60,8 +60,6 @@ extension UIViewController {
         }
     }
     
-  
-    
     //위치 권한 체크
     @objc func locationCheck(after: @escaping () -> ()) {
         let status = CLLocationManager.authorizationStatus()

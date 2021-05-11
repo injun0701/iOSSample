@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Socket Use View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SocketUseViewController" id="Y6W-OH-hqX" customClass="SocketUseViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소캣 샘플" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7s-cc-sgR">
+                                <rect key="frame" x="20" y="54" width="88.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rxQ-SN-GAw">
+                                <rect key="frame" x="20" y="807" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-vv-tsG" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-A4-F0M">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="이전"/>
+                                                <connections>
+                                                    <action selector="btnBackAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VD7-Oh-jAa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZIM-A4-F0M" secondAttribute="bottom" id="P8k-GT-6gl"/>
+                                            <constraint firstItem="ZIM-A4-F0M" firstAttribute="top" secondItem="qeW-vv-tsG" secondAttribute="top" id="ZdQ-dQ-x47"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZIM-A4-F0M" secondAttribute="trailing" id="igb-xV-bB0"/>
+                                            <constraint firstAttribute="height" constant="45" id="w2W-up-kNU"/>
+                                            <constraint firstItem="ZIM-A4-F0M" firstAttribute="leading" secondItem="qeW-vv-tsG" secondAttribute="leading" id="xjW-wg-LM6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOs-qK-vJ8">
+                                <rect key="frame" x="20" y="140" width="304" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xy6-Rf-1LK">
+                                <rect key="frame" x="20" y="194" width="374" height="583"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvm-4I-U9t">
+                                <rect key="frame" x="334" y="137" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5pg-TL-0rL"/>
+                                    <constraint firstAttribute="width" constant="60" id="hWf-KC-EbY"/>
+                                </constraints>
+                                <state key="normal" title="보내기"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4Rl-v5-gNk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*소캣 서버가 실행되어야 동작합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-6C-OaS">
+                                <rect key="frame" x="20" y="93" width="203.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rxQ-SN-GAw" secondAttribute="bottom" constant="10" id="2p6-KV-v8g"/>
+                            <constraint firstItem="xE2-6C-OaS" firstAttribute="top" secondItem="w7s-cc-sgR" secondAttribute="bottom" constant="10" id="FNd-8Q-Yxg"/>
+                            <constraint firstItem="Dvm-4I-U9t" firstAttribute="centerY" secondItem="JOs-qK-vJ8" secondAttribute="centerY" id="I2N-0Y-KXy"/>
+                            <constraint firstItem="rxQ-SN-GAw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MbC-0R-LU3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dvm-4I-U9t" secondAttribute="trailing" constant="20" id="NM3-Vh-6WK"/>
+                            <constraint firstItem="xy6-Rf-1LK" firstAttribute="top" secondItem="JOs-qK-vJ8" secondAttribute="bottom" constant="20" id="NvW-mx-y09"/>
+                            <constraint firstItem="xy6-Rf-1LK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="OLv-a3-NrR"/>
+                            <constraint firstItem="w7s-cc-sgR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="RXu-qD-zhk"/>
+                            <constraint firstItem="w7s-cc-sgR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="RZ6-U4-avm"/>
+                            <constraint firstItem="Dvm-4I-U9t" firstAttribute="leading" secondItem="JOs-qK-vJ8" secondAttribute="trailing" constant="10" id="aKV-KH-1nP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rxQ-SN-GAw" secondAttribute="trailing" constant="20" id="as0-q5-W3c"/>
+                            <constraint firstItem="xE2-6C-OaS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="c9v-Ar-j9N"/>
+                            <constraint firstItem="JOs-qK-vJ8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="g4n-o1-HEl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xy6-Rf-1LK" secondAttribute="trailing" constant="20" id="pXZ-gi-5Sf"/>
+                            <constraint firstItem="JOs-qK-vJ8" firstAttribute="top" secondItem="xE2-6C-OaS" secondAttribute="bottom" constant="30" id="rdp-pv-UtX"/>
+                            <constraint firstItem="rxQ-SN-GAw" firstAttribute="top" secondItem="xy6-Rf-1LK" secondAttribute="bottom" constant="30" id="sKj-nm-pQz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfMsg" destination="JOs-qK-vJ8" id="atH-MM-ALo"/>
+                        <outlet property="tvMsg" destination="xy6-Rf-1LK" id="ha1-6J-nrf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
