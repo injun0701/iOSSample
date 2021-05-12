@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-2d-HgU">
-                                <rect key="frame" x="20" y="178" width="374" height="45"/>
+                                <rect key="frame" x="20" y="243" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh9-Mr-pu5" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -43,7 +43,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KOK-Du-Odh">
-                                <rect key="frame" x="20" y="243" width="374" height="45"/>
+                                <rect key="frame" x="20" y="308" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSO-0j-gAT" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -93,7 +93,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IsA-XA-XEK">
-                                <rect key="frame" x="20" y="113" width="374" height="45"/>
+                                <rect key="frame" x="20" y="178" width="374" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDl-SW-Uqq" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -123,6 +123,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zhM-QA-qkN">
+                                <rect key="frame" x="20" y="113" width="374" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kuI-2O-NWl" customClass="SubViewBackgroundDesignBtn" customModule="iOSSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3b-L9-Tmj">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <state key="normal" title="Naver Papago Api"/>
+                                                <connections>
+                                                    <action selector="btnToNaverPapagoApiAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0ax-hm-hWI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Z3b-L9-Tmj" firstAttribute="top" secondItem="kuI-2O-NWl" secondAttribute="top" id="2iJ-qq-ylI"/>
+                                            <constraint firstAttribute="height" constant="45" id="4KI-Fc-vvs"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z3b-L9-Tmj" secondAttribute="bottom" id="7yR-H5-158"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z3b-L9-Tmj" secondAttribute="trailing" id="9te-kI-dKR"/>
+                                            <constraint firstItem="Z3b-L9-Tmj" firstAttribute="leading" secondItem="kuI-2O-NWl" secondAttribute="leading" id="CCm-SV-5o5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -132,13 +157,16 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JhE-AK-OKe" secondAttribute="trailing" constant="20" id="6HH-5x-RaB"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IsA-XA-XEK" secondAttribute="trailing" constant="20" id="BPY-Xi-QPJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KOK-Du-Odh" secondAttribute="trailing" constant="20" id="F6B-ZY-7nD"/>
-                            <constraint firstItem="IsA-XA-XEK" firstAttribute="top" secondItem="QuS-dt-wu3" secondAttribute="bottom" constant="30" id="FQX-wT-kT4"/>
+                            <constraint firstItem="zhM-QA-qkN" firstAttribute="top" secondItem="QuS-dt-wu3" secondAttribute="bottom" constant="30" id="FCH-Vz-JjV"/>
                             <constraint firstItem="KOK-Du-Odh" firstAttribute="top" secondItem="ucN-2d-HgU" secondAttribute="bottom" constant="20" id="Y06-2z-7d6"/>
+                            <constraint firstItem="zhM-QA-qkN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="YxQ-Xp-9ag"/>
                             <constraint firstItem="ucN-2d-HgU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Z2T-9g-cnC"/>
+                            <constraint firstItem="IsA-XA-XEK" firstAttribute="top" secondItem="zhM-QA-qkN" secondAttribute="bottom" constant="20" id="cro-La-M2u"/>
                             <constraint firstItem="JhE-AK-OKe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fJC-tu-eqQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JhE-AK-OKe" secondAttribute="bottom" constant="10" id="m7f-Sh-fUc"/>
                             <constraint firstItem="IsA-XA-XEK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mo8-Jf-21B"/>
                             <constraint firstItem="QuS-dt-wu3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="qiU-x5-aej"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zhM-QA-qkN" secondAttribute="trailing" constant="20" id="tU4-wF-Obk"/>
                             <constraint firstItem="QuS-dt-wu3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="uwi-zv-TJZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ucN-2d-HgU" secondAttribute="trailing" constant="20" id="ycw-qD-AKr"/>
                         </constraints>

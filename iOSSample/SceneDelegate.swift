@@ -9,7 +9,6 @@ import UIKit
 //로컬 알림을 사용하기 위한 프레임워크 import
 import UserNotifications
 
-
 //이 클래스는 앱이 실행될 때 AppDelegate가 호출되고
 //화면이 보여지기 전에 호출되어 화면을 만드는 역할을 하는 클래스
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -25,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         notificationCenter.requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {(didAllow, e) -> Void in })
         //알림이 왔을 떄 호출될 메소드의 위치를 설정
         notificationCenter.delegate = self
-        
+      
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

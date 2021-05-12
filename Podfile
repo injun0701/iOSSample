@@ -9,5 +9,6 @@ target 'iOSSample' do
 
 pod 'Alamofire'
 pod 'JGProgressHUD'
+pod 'SwiftyJSON'
 
 end

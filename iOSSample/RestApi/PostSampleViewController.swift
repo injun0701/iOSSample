@@ -24,41 +24,37 @@ class PostSampleViewController: UIViewController {
     let imagePickerController = UIImagePickerController()
     
     @IBAction func btnImgAction(_ sender: UIButton) {
+        //사진을 선택하기 위해 앨범 출력
+        self.imagePickerController.sourceType = .photoLibrary
+        self.present(self.imagePickerController, animated: true, completion: nil)
         
+        /*
+        //UIImagePickerController() - 읽기 전용만 사용할때는 권한 허용이 필요하지 않음
         //카메라 권한 허용 체크
         switch PHPhotoLibrary.authorizationStatus() {
         case .authorized:
-            
             print("permission: 권한 허용")
             OperationQueue.main.addOperation {
                 self.imagePickerController.sourceType = .photoLibrary
                 self.present(self.imagePickerController, animated: true, completion: nil)
             }
-            
-        case  .restricted, .denied:
-            
+        case .restricted, .denied:
             print("permission: 권한 거부")
             goToCameraSetting()
-            
         case .notDetermined:
-            
             print("permission: 선택 안함")
             //카메라 권한 허용 띄우기
             PHPhotoLibrary.requestAuthorization { state in
                 if state == .authorized {
-                    //스레드 이용해야 동작함
-                    OperationQueue.main.addOperation {
-                        self.imagePickerController.sourceType = .photoLibrary
-                        self.present(self.imagePickerController, animated: true, completion: nil)
-                    }
+
                 } else {
                     self.dismiss(animated: true, completion: nil)
                 }
             }
-            
         default:
             break
         }
+        */
         
     }
     

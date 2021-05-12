@@ -9,6 +9,12 @@ import UIKit
 
 class RestApiViewController: UIViewController {
     
+    @IBAction func btnToNaverPapagoApiAction(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "NaverPapagoApi", bundle: nil)
+        let navi = sb.instantiateViewController(withIdentifier: "NaverPapagoApiViewController") as! NaverPapagoApiViewController
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
     @IBAction func btnToKakaoSearchApiAction(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RestApi", bundle: nil)
         let navi = sb.instantiateViewController(withIdentifier: "KakaoSearchApiViewController") as! KakaoSearchApiViewController

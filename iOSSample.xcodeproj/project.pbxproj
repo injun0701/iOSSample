@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8403B53D264100170085E736 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403B53C264100170085E736 /* LogViewController.swift */; };
+		840C9C39264BF49A00A8138C /* NaverPapagoApi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C9C37264BF49A00A8138C /* NaverPapagoApi.storyboard */; };
+		840C9C3A264BF49A00A8138C /* NaverPapagoApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C9C38264BF49A00A8138C /* NaverPapagoApiViewController.swift */; };
+		840C9C3C264BF51000A8138C /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C9C3B264BF51000A8138C /* Component.swift */; };
 		8411FEC3263F836600527296 /* PhoneBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEC2263F836600527296 /* PhoneBookViewController.swift */; };
 		8411FED2263F884000527296 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FEC8263F883F00527296 /* FMDatabaseAdditions.m */; };
 		8411FED3263F884000527296 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411FECA263F883F00527296 /* FMDatabase.m */; };
@@ -108,6 +111,9 @@
 /* Begin PBXFileReference section */
 		63E697018CECE9168504E659 /* Pods_iOSSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403B53C264100170085E736 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		840C9C37264BF49A00A8138C /* NaverPapagoApi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NaverPapagoApi.storyboard; sourceTree = "<group>"; };
+		840C9C38264BF49A00A8138C /* NaverPapagoApiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaverPapagoApiViewController.swift; sourceTree = "<group>"; };
+		840C9C3B264BF51000A8138C /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		8411FEC2263F836600527296 /* PhoneBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookViewController.swift; sourceTree = "<group>"; };
 		8411FEC4263F837000527296 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8411FEC7263F883F00527296 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
@@ -229,6 +235,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840C9C36264BF45C00A8138C /* NaverPapagoApi */ = {
+			isa = PBXGroup;
+			children = (
+				840C9C37264BF49A00A8138C /* NaverPapagoApi.storyboard */,
+				840C9C38264BF49A00A8138C /* NaverPapagoApiViewController.swift */,
+			);
+			path = NaverPapagoApi;
+			sourceTree = "<group>";
+		};
 		8411FEC6263F877500527296 /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +467,7 @@
 		8489453F263A8E6F00F50111 /* RestApi */ = {
 			isa = PBXGroup;
 			children = (
+				840C9C36264BF45C00A8138C /* NaverPapagoApi */,
 				84894540263A8E8A00F50111 /* RestApi.storyboard */,
 				84894542263A8E9C00F50111 /* RestApiViewController.swift */,
 				84894544263A8F0800F50111 /* KakaoSearchApiViewController.swift */,
@@ -469,6 +485,7 @@
 		84894546263A99FE00F50111 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				840C9C3B264BF51000A8138C /* Component.swift */,
 				84BB7D3D2649397F00FED24E /* LocationConfig.swift */,
 				84F35215263906E100BA490C /* Reachability.swift */,
 			);
@@ -623,6 +640,7 @@
 				84855E18263809CE009C1D0B /* CollectionViewSample.storyboard in Resources */,
 				842F1353263112CB008A172D /* ScrollView.storyboard in Resources */,
 				8442A184262FAF700077C18A /* Main.storyboard in Resources */,
+				840C9C39264BF49A00A8138C /* NaverPapagoApi.storyboard in Resources */,
 				84EF3551264A476300105A96 /* inception.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,6 +709,7 @@
 				84894543263A8E9C00F50111 /* RestApiViewController.swift in Sources */,
 				84BB7D3C26492D5A00FED24E /* MapResultRouteViewController.swift in Sources */,
 				8422FCD3263BA45300F688FD /* MovieVO.swift in Sources */,
+				840C9C3C264BF51000A8138C /* Component.swift in Sources */,
 				8411FEDB263F9D3100527296 /* PhoneBookDAO.swift in Sources */,
 				8411FF04263FDBC300527296 /* ToDoViewController.swift in Sources */,
 				8442A1B0262FD7880077C18A /* UIObjectViewController.swift in Sources */,
@@ -742,6 +761,7 @@
 				84894538263A54AD00F50111 /* ThreadViewController.swift in Sources */,
 				842F134C26310416008A172D /* GestureViewController.swift in Sources */,
 				8411FF0A263FF7A100527296 /* iOSSample.xcdatamodeld in Sources */,
+				840C9C3A264BF49A00A8138C /* NaverPapagoApiViewController.swift in Sources */,
 				8422FCDA263BE86700F688FD /* LocalDataSaveViewController.swift in Sources */,
 				8411FED6263F884000527296 /* FMResultSet.m in Sources */,
 				8411FEC3263F836600527296 /* PhoneBookViewController.swift in Sources */,
